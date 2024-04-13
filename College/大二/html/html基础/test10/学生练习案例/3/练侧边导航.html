@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 侧边导航css -->
+    <style>
+       /*头部导航侧边最外层容器*/
+main .sidebar {
+    width: 200px;
+    height: 100%;
+    background: #5fb4e5;
+    font-size: 20px;
+}
+/*头部导航标题*/
+.sidebar>.sidebar-title {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: #0496eb 1px solid;
+}
+.sidebar-title a,
+.sidebar-title i {
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+/*头部导航一级导航*/
+.nav .nav-menu {
+    height: 120px;
+    /* 添加延迟 */
+    transition: 0.5s all ease;
+}
+
+.active {
+    height: 60px;
+    /* 多余部分隐藏，overflow */
+    overflow: hidden;
+    transition: 0.5s all ease;
+}
+
+/*头部导航一级导航标题*/
+.nav-title {
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+ .nav-title:hover {
+    background: #0496eb;
+}
+/*头部导航一级内容1*/
+ .nav-content {
+    width: 100%;
+    border-bottom: #0496eb 2px dashed;
+}
+.nav-content>a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color: #ccc;
+    text-align: center;
+}
+.nav-content>a:hover {
+    color: #fff;
+    background-color: #0496eb;
+} 
+    </style>
+</head>
+<body>
+    <main>
+    <!-- 侧边导航代码 -->
+    <div class="sidebar">
+        <div class="sidebar-title">
+            <a href="">侧边导航</a>
+            <i class="fas fa-heart"></i>
+        </div>
+        <!-- 菜单栏导航 -->
+        <div class="nav">
+            <!-- 菜单栏项 -->
+            <div class="nav-menu">
+                <!-- 主标题 -->
+                <div class="nav-title">
+                    我的喜欢&nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-tag"></i>
+                </div>
+                <!-- 子标题 -->
+                <div class="nav-content">
+                    <a href="./photo.html" target="content-frame">内容1</a>
+                    <a href="./photo.html" target="content-frame">内容1</a>
+                </div>
+            </div>
+            <!-- 菜单栏项 -->
+            <div class="nav-menu">
+                <!-- 主标题 -->
+                <div class="nav-title">
+                    我的美图&nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-image"></i>
+                </div>
+                <!-- 子标题 -->
+                <div class="nav-content">
+                    <a href="#">内容1</a>
+                    <a href="#">内容1</a>
+                </div>
+            </div>
+            <!-- 菜单栏项 -->
+            <div class="nav-menu">
+                <!-- 主标题 -->
+                <div class="nav-title">
+                    我的特长&nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-mug-hot"></i>
+                </div>
+                <!-- 子标题 -->
+                <div class="nav-content">
+                    <a href="./photo.html" target="content-frame">内容1</a>
+                    <a href="./photo.html" target="content-frame">内容1</a>
+                </div>
+            </div>
+            <!-- 菜单栏项 -->
+            <div class="nav-menu">
+                <!-- 主标题 -->
+                <div class="nav-title">
+                    我的心愿&nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <!-- 子标题 -->
+                <div class="nav-content">
+                    <a href="./photo.html" target="content-frame">内容1</a>
+                    <a href="./photo.html" target="content-frame">内容1</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    <script>
+        //获取子类节点， 通过子类用parentNode来获取父类节点，然后进行修改
+
+
+        //querySelector  里面的类要加.   getElementsByClassName 里面的类不加.
+        // var navTitleElements = document.querySelector(".nav-title");
+        var navTitleElements = document.getElementsByClassName("nav-title");
+        for (let index = 0; index < navTitleElements.length; index++) {
+            navTitleElements[index].onclick = function() {
+                //指向父类节点 第一个是通过函数直接获取类名改，第二个是直接改
+                //this.parentNode.setAttribute("class", "active");
+                if (this.parentNode.className == "active")  
+                    this.parentNode.className = "nav-menu";
+                else
+                    this.parentNode.className = "active";
+            }
+        }
+    </script>
+</body>
+</html>

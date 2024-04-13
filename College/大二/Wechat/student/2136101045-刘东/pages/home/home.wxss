@@ -1,0 +1,34 @@
+.aa{
+  height: 180px;
+}
+.bb{
+  border: 2px solid;
+  border-color: darkorange;
+  border-radius: 15px;
+
+}
+.cc{
+  height: 50px;
+  margin-top: 5px;
+}
+.gg{
+
+  margin-left: 150px;
+}
+.dd{
+  width: 100px;
+  height: 120px;
+  margin: 3px;
+}
+.ee{
+  margin-right: 25px;
+  margin-left: 40px;
+}
+.hh{
+  margin-right: 40px;
+  margin-left: 23px;
+}
+.ff{
+  margin-right: 10px;
+  margin-left: 10px;
+}

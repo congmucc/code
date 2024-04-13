@@ -1,0 +1,19 @@
+<view class="back">
+<swiper   autoplay indicator-dots="true" indicator-color="red" style="height:250px;">
+  <swiper-item>
+<view class="aa">w0w0w00w0w0w</view>
+</swiper-item>
+<swiper-item>
+<view class="bb">5大儿给我导</view>
+<button type="primary" bindtap="goto">点击开导</button>
+</swiper-item>
+<swiper-item>
+<view class="cc">w0w0w00w0w0w</view>
+</swiper-item>
+</swiper>
+</view>
+<scroll-view class="back" scroll-left="true" scroll-y="true" refresher-enabled="true" refresher-threshold="15">
+<image src="/image/马云.jpg"></image>
+<image src="/image/雷军.jpg"></image>
+
+</scroll-view>

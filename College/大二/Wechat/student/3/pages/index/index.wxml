@@ -1,0 +1,20 @@
+<view class="aa">
+<checkbox>苹果</checkbox>
+<checkbox>香蕉</checkbox>
+<checkbox>火龙果</checkbox>
+
+<checkbox id="12">
+<label for="12">for属性</label>
+</checkbox>
+</view>
+
+<view>
+
+<input placeholder="请输入账号"></input>
+<input placeholder="请输入密码"></input>
+<form>
+<button size="mini" type="primary" style="position: relative; left: 293rpx; top: 5rpx">提交</button>
+<button size="mini" type="default" style="position: relative; left: 151rpx; top: 132rpx">重置</button>
+</form>
+ 
+</view>

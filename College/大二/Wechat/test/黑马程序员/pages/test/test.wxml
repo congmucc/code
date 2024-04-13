@@ -1,0 +1,40 @@
+<!-- 数据绑定 -->
+<!-- 三元运算符 -->
+<view>{{randomNumber > 5 ? "随机数大于5" : "随机数小于5"}}</view>
+
+
+<!-- 事件绑定 -->
+<!-- bindtop -->
+<view style="color: red; margin-top: 20rpx">bindtop:</view>
+<button type="primary" bindtap="buttonTop" data-name1="淘宝" data-name2="京东">修改</button>
+
+<view>结果：{{name}}</view>
+
+<!-- bindinput -->
+<view style="color: red; margin-top: 20rpx;">bindinput:</view>
+<input type="text" value="{{msg}}" bindinput="buttonInput"/>
+
+<!-- 文本框与data之间的数据同步 -->
+<view>msg：{{age}}</view>
+
+<!-- 列表渲染 -->
+<view style="color: red; margin-top: 20rpx;">列表渲染：</view>
+
+<view wx:for="{{arr1}}">
+  索引是：{{index}}, item是{{item}}
+</view>
+
+<!-- 手动指定索引和当前项的变量名 -->
+<view>~~~~~~</view>
+
+<view wx:for="{{arr1}}" wx:for-index="idx" wx:for-item="itemName">
+  索引是：{{idx}}, item是{{itemName}}
+</view>
+
+<!-- wx:key的使用 -->
+<view>~~~~~~</view>
+
+<!-- userList中在前面加一个id(自定义)的值，并且在key里面写id(自定义)两者值一样，就是wx:key的使用方法 -->
+<view wx:for="{{userList}}" wx:key="id">
+  {{item.name}}
+</view>

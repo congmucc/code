@@ -1,0 +1,101 @@
+page {
+  background-color: #f6f6f6;
+  height: auto;
+  padding-top: 150rpx;
+}
+
+.content{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-direction: column;
+  position: relative;
+}
+
+
+/* 姓名view */
+.userName{
+  margin-top: 15rpx;
+  padding-bottom: 30rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+  width: 95%;
+  margin-left: 18rpx;
+  border-radius: 15rpx;
+  box-shadow:0rpx 2rpx 8rpx 8rpx rgb(220, 220, 220);
+}
+
+/* 姓名文字view */
+.userNameText {
+  display: block; 
+  padding-top: 20rpx;
+ /* padding-top: 60rpx; */
+ margin-left: 10rpx;
+ margin-right: 20rpx;
+}
+
+/* 输入框view */
+.userNameInput {
+  border: 3rpx solid #ccc;
+  /* height: 50rpx; */
+  width: 630rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  font-size: 32rpx;
+  padding: 20rpx;
+  border-radius: 15rpx;
+}
+
+.userNameInput:hover {
+  border: 1rpx solid blue;
+}
+
+.userNameTextarea {
+  border: 3rpx solid #ccc;
+  width: 630rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  font-size: 32rpx;
+  padding: 20rpx;
+  border-radius: 15rpx;
+}
+
+.font30{
+  margin-top: 10rpx;
+  font-size: 30rpx;
+}
+
+.color3{
+  color: #333;
+}
+
+.color6{
+  color: #666;
+}
+
+.timeIcon{
+  color:#666;
+  position: absolute;
+  left: 635rpx;
+  font-size: 35rpx;
+}
+
+.regionIcon {
+  color:#666;
+  position: absolute;
+  left: 635rpx;
+  font-size: 35rpx;
+}
+
+/* 按钮 */
+.btnblock {
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+  background-color: #1e6fff;
+  color: white;
+  font-weight: 400;
+  font-size: 36rpx;
+}

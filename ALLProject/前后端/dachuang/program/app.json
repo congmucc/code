@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/login/login", 
+    "pages/activityUser/activityUser",
+    "pages/activity/activity",
+    "pages/certification/certification",
+    "pages/actManagement/actManagement",
+    "pages/activityState/activityState",
+    "pages/actFeedback/actFeedback", 
+    "pages/parttime/parttime",
+    "pages/actCommunications/actCommunications",
+    "pages/actFeedbackTwo/actFeedbackTwo",
+    "pages/parttimeUser/parttimeUser",
+    "pages/parttimeManagement/parttimeManagement",
+    "pages/parttimeState/parttimeState",
+    "pages/register/register",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/xieyi/xieyi",
+    "pages/forget/forget"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "机构端",
+    "navigationBarTextStyle":"black",
+    "navigationStyle":"custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

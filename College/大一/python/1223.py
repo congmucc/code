@@ -1,0 +1,9 @@
+a=[]
+name=input("请输入姓名")
+tel=input("请输入电话")
+email=input("请输入邮箱")
+address=input("请输入地址")
+dirt={'name':name,'tel':tel,'email':email,'address':address}
+a.append(dirt)
+print(a)
+print(len(a))

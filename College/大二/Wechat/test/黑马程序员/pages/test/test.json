@@ -1,0 +1,5 @@
+{
+  "usingComponents": {},
+  // 没有显示的话一下编译缓存
+  "navigationBarTitleText": "测试"
+}

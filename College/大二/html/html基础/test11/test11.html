@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3,6,4-min.js"></script>
+    <script>
+        // window.onload=function() {
+        //     alert("hello window");
+        // }
+        // alert("111");
+        // //jquery的准备函数
+        // $(document).ready(function(){
+        //     alert("hello jquery");
+        // });
+        // //jquery的准备函数简写
+        // $(function(){
+        //     alert("hello jquery two");
+        // })
+
+        $(function() {
+            //实现p段落的显示和隐藏
+            // $("#btn1").click(function() {
+            //     $("p").hide(2000);
+            // });
+            // $("#btn2").click(function() {
+            //     $("p").show(2000);
+            // });
+            // $("#btn3").click(function() {
+            //     $("p").toggle(2000);
+            // });
+
+            //实现p段落的收放
+            // $("#btn1").click(function() {
+            //     $("p").slideUp(2000);
+            // });
+            // $("#btn2").click(function() {
+            //     $("p").slideDown(2000);
+            // });
+            // $("#btn3").click(function() {
+            //     $("p").slideToggle(2000);
+            // });
+
+            //实现p段落的透明与显示 淡出 淡入 半透明
+            $("#btn1").click(function() {
+                $("p").fadeOut(2000);
+            });
+            $("#btn2").click(function() {
+                $("p").fadeIn(2000);
+            });
+            $("#btn3").click(function() {
+                $("p").fadeToggle(2000);
+            });
+            $("#btn4").click(function() {
+                $("p").fadeTo(2000, 0.5);
+            });
+
+
+            $("#btn5").click(function() {
+                $("#myul1>li").addClass("myclass");
+            });
+        })
+
+    </script>
+    <style>
+        .myclass{
+            list-style: none;
+            background-color: aqua;
+            width: 200px;
+            text-align: center;
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <p style="width: 200px; height: 200px; line-height: 200px; text-align: center; background-color: coral;">点我</p>
+    <input type="button" value="隐藏" id="btn1">
+    <input type="button" value="显示" id="btn2">
+    <input type="button" value="切换" id="btn3">
+    <input type="button" value="透明" id="btn4">
+
+    <hr/>
+    <ul id="myul1" >
+        <li>音乐</li>
+        <li>羽毛球</li>
+        <li>足球</li>
+        <li>篮球</li>
+    </ul>
+
+    <input type="button" value="改变列表样式" id="btn5">
+
+    <hr/>
+    <ul id="myul2" >
+        <li>音乐</li>
+        <li>羽毛球</li>
+        <li>足球</li>
+        <li>篮球</li>
+        <li>音乐</li>
+        <li>羽毛球</li>
+        <li>足球</li>
+        <li>篮球</li>
+        <li>音乐</li>
+        <li>羽毛球</li>
+        <li>足球</li>
+        <li>篮球</li>
+    </ul>
+
+    <hr/>
+
+    <input type="text" id="userinput">
+    <button>修改HTML元素内容</button>
+    
+    <script>
+        // var pEle = document.getElementsByTagName("p")[0];
+        // var btn = document.getElementById("btn1");
+        // btn.onclick = function() {
+        //     pEle.style.display = "none";
+        // }
+        // document.getElementById("btn2").onclick = function() {
+        //     pEle.style.display = "block";
+        // }
+    
+        //改变myul2的颜色 原生js版        
+        // var colorArr = new Array("blue", "red", "pink", "green");
+        // var liEles = document.querySelectorAll("#myul2>li");
+        // for (let index = 0; index < liEles.length; index++) {
+        //     liEles[index].style.color = colorArr[index%4];
+        // }         
+
+
+        //改变myul2的颜色 jquery版
+        $(function() {
+            var colorArr = new Array("blue", "red", "pink", "green");
+            $("#myul2>li").each(function(index) {
+                this.style.color = colorArr[index%4];
+            });
+        });
+
+        //修改HTML元素内容       
+        $("button").click(function() {
+            var newContent = $("#userinput").val();
+            $("#myul2>li:first-child").html("<h2>" + newContent + "<h2>");//html()可以添加html相应的内容，即<h2>这种的
+            $("#myul2>li:last-child").text(newContent);//text()只能添加文本内容
+        })
+    </script>
+</body>
+</html>

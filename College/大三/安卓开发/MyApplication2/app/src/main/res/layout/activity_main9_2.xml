@@ -1,0 +1,25 @@
+<!-- activity_main9_2.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity9_2">
+
+    <Button
+        android:id="@+id/btnDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="选择日期"
+        android:onClick="showDatePickerDialog"/>
+
+    <Button
+        android:id="@+id/btnTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDatePicker"
+        android:layout_marginTop="20dp"
+        android:text="选择时间"
+        android:onClick="showTimePickerDialog"/>
+
+</RelativeLayout>

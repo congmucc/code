@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/img/img",
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "测试",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#22af85"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "picture/_home.jpeg",
+        "selectedIconPath": "picture/home.jpeg"
+      },
+      {
+        "pagePath": "pages/img/img",
+        "text": "图片",
+        "iconPath": "picture/_img.jpeg",
+        "selectedIconPath": "picture/img.jpeg"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "picture/_search.jpeg",
+        "selectedIconPath": "picture/search.jpeg"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "picture/_my.jpeg",
+        "selectedIconPath": "picture/my.jpeg"
+      }
+    ]
+  }
+
+}

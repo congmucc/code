@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript复习题</title>
+</head>
+<body>
+<img src="./img.png" alt="鲜花图片" width="300px"  ondblclick="imgtrans();">
+<div id="msg">在这里显示</div>
+<input type="button" value="显示" id="btn">
+
+    <script>
+//         var num;
+//         num="5"+true;
+//         alert("5+true="+num);
+
+//    var a=prompt("请输入1-5数字"); 
+//     switch(a){
+//     case "1":alert("one");
+//     case "2":alert("two");
+//     case "3":alert("three");
+//     case "4":alert("four");
+//     case "5":alert("five");
+//     default:alert("none");
+//     }
+
+function imgtrans(){
+  document.querySelector("img").style.width="400px";
+}
+// json数据格式的练习
+
+var depts=[
+		{
+			num:5001,
+			name:"财务部",
+			emps:[
+            {number:101,name:"张三",skills:["报销","统计"]},
+            {number:101,name:"李四",skills:["出纳","采购"]},
+            {number:101,name:"王五",skills:["会计","核算"]},
+			]
+		}
+        ,
+		{
+			num:5002,
+			name:"研发部",
+			emps:[
+				{number:101,name:"张三丰",skills:["Java","C++"]},
+                {number:102,name:"郭靖",skills:["C","Java"]},
+                {number:101,name:"张无忌",skills:["Java","C++"]}
+			]
+		}
+		];
+		for(var i=0;i<depts.length;i++){
+			 for(var j=0;j<depts[i].emps.length;j++){
+				document.write("员工姓名："+depts[i].emps[j].name+"，部门名称："+depts[i].name+"，技能名称：");
+				for(var k=0;k<depts[i].emps[j].skills.length;k++){
+					document.write(depts[i].emps[j].skills[k]+" ");
+				}
+				document.write("<br>");
+			}
+		}
+
+    //     for(var i=0;i<depts.emps.length;i++){
+    //     document.write("员工姓名："+depts.emps[i].name+"，部门名称："+depts.name+"，技能名称：");
+    //     for(var j=0;j<depts.emps[i].skills.length;j++){
+    //          document.write(depts.emps[i].skills[j]+" ") ;
+    //        }
+    //        document.write("<br>")
+    //     }
+
+    //     var msg =document.getElementById('msg');
+    //     var btn=document.querySelector("#btn");
+    //     btn.onclick=function(){
+    //         var innermsg="";
+    //         for(var i=0;i<depts.emps.length;i++){
+    //             var skilmsg="";
+    //              for(var j=0;j<depts.emps[i].skills.length;j++){
+    //             skilmsg += depts.emps[i].skills[j]+" "  ;   
+    //        } 
+    //        innermsg +="员工姓名："+depts.emps[i].name+"，部门名称："+depts.name+"，技能名称："+ skilmsg+"<br>";
+    //     }
+    //     msg.innerHTML=innermsg;
+    // }
+    
+    </script>
+
+</body>
+</html>

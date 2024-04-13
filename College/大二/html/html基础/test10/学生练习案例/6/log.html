@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+</head>
+<body>
+    <form action="" name="myform" id="myform">
+     用户名：<input type="text"  id="Username">
+     密&nbsp;码：<input type="password"  id="Password">
+     <!-- <button>登录</button> -->
+     <input type="submit" value="登陆" id="btn" >
+    </form>
+    <script>
+        var userName = document.getElementById("Username");
+        var psw = document.getElementById("Password");
+        var myform = document.getElementById("myform");
+        var btnEle = document.getElementById("btn");
+        btnEle.onclick = function() {
+            if (userName.value == "admin" && psw.value == "123456") 
+            alert("登陆成功");
+            else {
+                alert("账号或密码错误");
+                myform.action = "#";
+            }
+        }
+        
+    </script>
+</body>
+</html>

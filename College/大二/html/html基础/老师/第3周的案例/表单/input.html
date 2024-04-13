@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单文本框案例</title>
+</head>
+
+<body>
+    <form action="ex6.html" method="post" target="_blank">
+    <h1>input单文本框案例</h1>
+    用户名: <input type="text" name="un" size="5" />
+    密&nbsp;&nbsp;&nbsp;码: <input type="password" name="psw" />
+
+    选择性别：<br />
+    <input type="radio" name="r1" value="m" />男性 <br />
+    <input type="radio" name="r1" value="f" />女性 <br />
+    
+    问卷调查您是通过何种方式了解该产品的：<br />
+    <input type="checkbox" name="group1" value="1" /> 朋友推荐
+    <input type="checkbox" name="group1" value="2" /> 搜索引擎
+    <input type="checkbox" name="group1" value="3" /> 媒体宣传
+    <input type="checkbox" name="group1" value="4" /> 其他<br/>
+
+    <input type="submit" value="跳转" />
+    <input type="reset" />
+    <input type="button" value="注册" onclick="alert('注册新用户!')" /><br /><br />
+    <input type="image" src="../06/images/submit.png" width="50"/>
+    <input type="file">
+    <input type="hidden" value="6" name="h1">
+</form>
+
+    <h1>input综合案例</h1>
+    <form name="form2" method="post" action="success.html" enctype="text/plain">
+        <fieldset>
+            <legend>请填写个人信息</legend><br>
+            姓名：<input type="text" name="xm" maxlength="10" size="10"><br>
+            爱好：<input type="checkbox" name="c1" value="读书" />读书
+            <input type="checkbox" name="c2" value="唱歌" checked="checked" />唱歌
+            <input type="checkbox" name="c3" value="游戏" checked="checked" />游戏<br>
+            性别：
+            <input type="radio" name="sex" value="male" checked="checked" />男性
+            <input type="radio" name="sex" value="female" />女性
+            <input type="submit" value="提交" />
+            <input type="reset" value="重置" />
+            <input type="button" value="注册" onclick="alert('注册新用户!')" /><br /><br />
+            点击右侧图片登录
+            <input type="image" src="submit.png" alt="登录" width="50px" /><br /><br />
+            点击上传文件
+            <input type="file" />
+        </fieldset>
+    </form>
+</body>
+</html>

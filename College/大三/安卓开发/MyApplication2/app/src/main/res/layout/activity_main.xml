@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/e2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/e2_button_gotoe2" />
+
+            <Button
+                android:id="@+id/e3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/e3_button_gotoe3" />
+            <Button
+                android:id="@+id/e4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/e4_button_gotoe4" />
+
+            <Button
+                android:id="@+id/e5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去实验5" />
+            <Button
+                android:id="@+id/e6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去实验6" />
+            <Button
+                android:id="@+id/e7_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去实验7_1" />
+            <Button
+                android:id="@+id/e7_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去实验7_2" />
+            <Button
+                android:id="@+id/e8_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去实验8_1" />
+            <Button
+                android:id="@+id/e8_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去实验8_2" />
+
+            <Button
+                android:id="@+id/e9_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去实验9_1" />
+
+            <Button
+                android:id="@+id/e9_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去实验9_2" />
+            <Button
+                android:id="@+id/e9_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去实验9_3" />
+            <Button
+                android:id="@+id/e10_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去实验10_1" />
+            <Button
+                android:id="@+id/e11_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去实验11_1" />
+            <Button
+                android:id="@+id/e11_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去实验11_2" />
+            <Button
+                android:id="@+id/e11_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去实验11_3" />
+            <Button
+                android:id="@+id/e12_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去实验12_1" />
+            <Button
+                android:id="@+id/e12_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去实验12_2" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

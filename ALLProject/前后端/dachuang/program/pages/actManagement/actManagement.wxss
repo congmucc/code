@@ -1,0 +1,131 @@
+
+page{
+  padding-top: 150rpx;
+  background-color: #eee;
+}
+/* 下划线 */
+.cut{
+  opacity: 0.2;
+  height: 2rpx;
+  margin-top: 20rpx;
+  background-color: #000000;
+}
+
+/* 主界面 */
+.contain {
+  background-color: #eee;
+  padding-bottom: 100rpx;
+  overflow: hidden;
+
+}
+
+
+/* 内容列表 */
+
+/* .itemList {
+   background-color: blue;
+   width: 90%;
+   padding-top: 10rpx;
+} */
+
+
+.text{
+  margin-bottom: 5rpx;
+  display: flex;
+  background-color: #fff;
+  padding: 20rpx;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  border-radius: 20rpx;
+  box-shadow:0rpx 2rpx 8rpx 8rpx rgb(221, 220, 220);
+}
+
+/* .text:active{
+  background-color:rgb(207, 255, 255);
+} */
+
+.text1{
+  width: 100%;
+}
+
+/* 内容列表标题 */
+.itemTitle{
+  font-size: 45rpx;
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 超出隐藏 */
+  text-overflow: ellipsis; /* 超出部分显示省略号 */
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}
+/* 内容列表内容 */
+.itemtxt{
+  font-size: 25rpx;
+  /* color: rgb(107, 105, 105); */
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 超出隐藏 */
+  text-overflow: ellipsis; /* 超出部分显示省略号 */
+  margin-top: 30rpx;
+}
+/* 时间地点父类 */
+.text2{
+  display: flex;
+  font-size: 35rpx;
+  justify-content: space-between;
+}
+
+
+/* 内容列表用户确认人数数字 */
+.itemTime{
+  font-size: 20rpx;
+  margin-top: 30rpx;
+}
+
+/* 内容列表用户参与人数 */
+.itemSite{
+  font-size: 20rpx;
+  margin-top: 30rpx;
+  margin-left: 17rpx;
+}
+
+/* 按钮行 */
+.itemButtonView {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20rpx;
+  margin-top: 30rpx;
+}
+
+
+/* 按钮
+.itemButton{
+
+} */
+
+/* 内容 */
+@font-face {
+  font-family: "iconfont"; /* Project id 4066547 */
+  src: url('//at.alicdn.com/t/c/font_4066547_prfyd1epavh.woff2?t=1684043971745') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4066547_prfyd1epavh.woff?t=1684043971745') format('woff'),
+       url('//at.alicdn.com/t/c/font_4066547_prfyd1epavh.ttf?t=1684043971745') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-qingjiashenqing:before {
+  content: "\e69b";
+}
+
+.icon-goutong:before {
+  content: "\e607";
+}
+
+.icon-xiugai:before {
+  content: "\e606";
+}

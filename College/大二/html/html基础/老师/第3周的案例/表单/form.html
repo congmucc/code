@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>表单的使用实例</title>
+      </head>
+      <body>
+        <form name="form1" method="post" action="success.html" enctype="text/plain">
+         <h3>输入课程成绩</h3>
+         姓名:<input type="text"/><br/><br/>
+         高等数学:<input type="text" size="15"/>
+         大学物理:<input type="text" size="15"/><br/>
+         等级：<select name="level" id="l1">
+            <option value="a" selected>A</option>
+            <option value="b" selected>B</option>
+            <option value="c" selected>C</option>
+            <option value="d" selected>D</option>
+         </select><br/><br/>
+         <textarea name="judge" rows="4" cols="20">在这里输入评价</textarea><br/><br/>
+         <input type="submit" value="成绩提交"/>
+         <input type="reset" value="成绩重置"/>
+        </form>
+      </body>
+      </html>
+      

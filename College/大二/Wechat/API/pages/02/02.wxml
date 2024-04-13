@@ -1,0 +1,4 @@
+<!--pages/02/02.wxml-->
+
+<text>导航栏</text>
+<button bindtap="tapMe">导航栏改变</button>

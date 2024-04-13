@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test03</title>
+    <style>
+        ul {
+        list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <table width="500px" border="4" height="100px" bordercolor="red" align="center" cellspacing=“10px” cellpadding=“10px”>
+        <caption>学生信息表</caption>
+        <tr>
+            <th colspan="2">上午</th>
+            <th colspan="2">下午</th>
+        </tr>
+        <tr>
+            <td>8:00-10:00</td>
+            <td>10:00-12:00</td>
+            <td>14:00-16:00</td>
+            <td>16:00-18:00</td>
+        </tr>
+        <tr align="center">
+            <td rowspan="2">领导讲话</td>
+            <td>大会报告</td>
+            <td>分会专题报告</td>
+            <td rowspan="2">总结报告</td>
+        </tr>
+        <tr align="center">
+            <td>专家报告</td>
+            <td>分组讨论</td>
+        </tr>
+        <tr align="center">
+            <td colspan="4">全天参观考察无锡国家物联网中心</td>
+        </tr>
+    </table>
+    <form actionm="demo.php" method="get">
+            <fieldset>
+            <legend align="center">登陆界面</legend>
+            <!-- text 文本框 -->
+            用户名<input type="text" value="请输入用户名"> <br/>
+            <!-- password 密码框 -->
+            账号<input type="password"> <br/>
+            <!-- radio 单选按钮 同一个名字，但是不是同一个value 用于以后数据库的数据传送 -->
+            性别：男<input type="radio" name="sex" value="male"> 女<input type="radio" name="sex" value="female"> <br/>
+            <!-- checkbox 多选框 -->
+            爱好：干饭<input type="checkbox" name="hobby" > 睡觉<input type="checkbox" name="hobby" > 玩游戏<input type="checkbox" name="hobby"> <br/>
+            <input type="submit" value="登录">
+            <input type="reset" value="重新填写"> <br/>
+            <input type="button" value="获取验证码"> <br/>
+            <input type="file">
+            籍贯：<select>
+                <option>河南</option>
+                <option>山东</option>
+                <option>河北</option>
+            </select> <br/>
+            反馈：<textarea rows="3" cols="50" wrap="virtual">
+
+            </textarea>
+        </fieldset>
+    </form>
+
+    <table width="700px" border="4" bordercolor="blue">
+        <tr>
+            <td>&nbsp;</td>
+            <td rowspan="5" colspan="2">
+                <table><tr><td>地铁4号横穿南京，......</td></tr></table>
+            </td>
+            <td>新闻链接</td>
+        </tr>
+        <tr>
+            <td>科技</td>
+            <td rowspan="4">
+                <ul>
+                    <li><a href="http://www.baidu.com">百度</a></li>
+                    <li><a href="http://www.163.com">网易</a></li>
+                    <li><a href="http://www.sina.com">新浪</a></li>
+                    <li><a href="http://www.sohu.com">搜弧</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>经济</td>
+        </tr>
+        <tr>
+            <td>探索</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+</body>
+</html>

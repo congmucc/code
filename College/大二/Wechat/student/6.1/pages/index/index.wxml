@@ -1,0 +1,9 @@
+<view class="aa">
+  <view class="bb" >
+  加法计算器</view>
+  <input placeholder="请输入第一个数" placeholder-style="color:red" class="cc" bindinput="getFirstnumber"></input>
+  <view class="dd">+</view>
+  <input placeholder="请输入第二个数" placeholder-style="color:red" class="cc" bindinput="getScondnumber" ></input>
+<button type="primary" bindtap="nume">计算</button>
+<text class="ee">计算结果：{{sum}}</text>
+</view>

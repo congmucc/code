@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/e5_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="实验五"/>
+    <Button
+        android:id="@+id/e5_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击增加次数" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入相关信息"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/e5_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:hint="请输入" />
+
+    <TextView
+        android:id="@+id/e5_exit_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入相关信息"
+        android:textSize="32sp" />
+
+
+</LinearLayout>

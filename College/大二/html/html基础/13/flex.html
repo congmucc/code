@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性布局+自适应管理页面</title>
+    <link rel="stylesheet" href="flex.css">
+    <script src="https://kit.fontawesome.com/dee60bf650.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- 头部导航开始 普通div的特性命名为header-->
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" usemap="#log" />
+            <map name="log">
+                <area shape="circle" coords="30,30,20" href="http://www.baidu.com" target="_blank">
+            </map>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="content.html">精彩内容</a></li>
+                <li><a href="photowall.html">照片墙</a></li>
+                <li><a href="#">联系我</a></li>
+                <li><a href="register.html">注册</a></li>
+                <li><a href="login.html">登录</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Click Here To Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+    <!-- 页面主体的内容  命名为main -->
+    <main>
+        <div class="sidebar">
+            <div class="sidebar-title">
+                <a href="">侧边导航</a>
+                <i class="fas fa-heart"></i>
+            </div>
+            <!-- 菜单栏导航 -->
+            <div class="nav">
+                <!-- 菜单栏项 -->
+                <div class="nav-menu">
+                    <!-- 主标题 -->
+                    <div class="nav-title">
+                        我的喜欢&nbsp;&nbsp;&nbsp;
+                        <i class="fa-solid fa-tag"></i>
+                    </div>
+                    <!-- 子标题 -->
+                    <div class="nav-content">
+                        <a href="./后台管理页面.html" target="content-frame">内容1</a>
+                        <a href="./photo.html" target="content-frame">内容1</a>
+                    </div>
+                </div>
+                <!-- 菜单栏项 -->
+                <div class="nav-menu">
+                    <!-- 主标题 -->
+                    <div class="nav-title">
+                        我的美图&nbsp;&nbsp;&nbsp;
+                        <i class="fa-solid fa-image"></i>
+                    </div>
+                    <!-- 子标题 -->
+                    <div class="nav-content">
+                        <a href="./后台管理页面.html" target="content-frame">内容1</a>
+                        <a href="#" target="content-frame">内容1</a>
+                    </div>
+                </div>
+                <!-- 菜单栏项 -->
+                <div class="nav-menu">
+                    <!-- 主标题 -->
+                    <div class="nav-title">
+                        我的特长&nbsp;&nbsp;&nbsp;
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <!-- 子标题 -->
+                    <div class="nav-content">
+                        <a href="./photo.html" target="content-frame">内容1</a>
+                        <a href="./photo.html" target="content-frame">内容1</a>
+                    </div>
+                </div>
+                <!-- 菜单栏项 -->
+                <div class="nav-menu">
+                    <!-- 主标题 -->
+                    <div class="nav-title">
+                        我的心愿&nbsp;&nbsp;&nbsp;
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <!-- 子标题 -->
+                    <div class="nav-content">
+                        <a href="./photo.html" target="content-frame">内容1</a>
+                        <a href="./photo.html" target="content-frame">内容1</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <iframe name="content-frame" src="./js.html" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+    </main>
+    <!-- 网页尾部内容 -->
+    <footer >
+        <h3>About Web</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing <br/>
+          Dolorum nulla molestiae ipsam tenetur quas commodi fugiat nisi earum vitae<br/> 
+          natus totam saepe dolor,distinctio ea velit laborum esse est impedit.<br/>
+        </p>
+        <div class="icons">
+          <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <hr>
+          <h5>Copyright &copy;2022, Jenny Web</h5>
+      </footer>
+</body>
+
+</html>

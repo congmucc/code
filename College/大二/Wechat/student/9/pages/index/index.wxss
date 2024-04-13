@@ -1,0 +1,13 @@
+.aa{
+  background-color: sandybrown;
+  width: 350px;
+  height: 500px;
+}
+.bb{
+  margin: 30px;
+  left: -10px;
+
+}
+.cc{
+  left:-10px;
+}

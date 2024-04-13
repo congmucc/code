@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/hd/hd",
+    "pages/hk/hk",
+    "pages/zd/zd",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "第十章",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/hd/hd",
+      "text": "河南大学",
+      "iconPath": "images/河南大学.jpg",
+      "selectedIconPath": "images/朵拉.jpg"
+    },
+    {
+      "pagePath": "pages/hk/hk",
+      "text": "河南开封科技传媒学院",
+      "iconPath": "images/b.png",
+      "selectedIconPath": "images/朵拉.jpg"
+    },
+    {
+      "pagePath": "pages/zd/zd",
+      "text": "郑州大学",
+      "iconPath": "images/郑州大学.jpg",
+      "selectedIconPath": "images/朵拉.jpg"
+    }
+  ]
+  }
+
+}

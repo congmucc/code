@@ -1,0 +1,7 @@
+<!--pages/01/01.wxml-->
+<view>
+  <button bindtap="tapMe1">消息提示框</button>
+  <button bindtap="tapMe2">模态框</button>
+  <button bindtap="tapMe3">loading提示框</button>
+  <button bindtap="tapMe4">界面菜单提示框</button>
+</view>

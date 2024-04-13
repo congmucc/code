@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .divmei{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        数字1：<input type="text" id="text1">
+        <select name="xie" id="xie" >
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>
+        数字2：<input type="text" id="text2">
+        结果：<input type="text" id="result">
+        <input type="button" value="计算" id="jisuan">
+        <div class="divmei">字体颜色</div>
+        <!-- <input type="submit" value="提交"> -->
+    </form>
+
+    <script>
+        document.getElementById('jisuan').onclick=function(){
+            var t1=parseFloat(document.getElementById('text1').value);
+            var t2=parseFloat(document.getElementById("text2").value);
+            var s1=document.getElementById("xie").value;
+            var result = document.getElementById('result');
+            if (s1=="+") {result.value=t1+t2;}
+            if (s1=="-") {result.value=t1-t2;}
+            if (s1=="*") {result.value=t1*t2;}
+            if(s1=="/" && (t2 != 0)) {result.value=t1/t2;}
+        }
+    </script>
+</body>
+</html>

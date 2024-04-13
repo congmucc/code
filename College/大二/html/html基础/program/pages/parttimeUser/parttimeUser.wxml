@@ -1,0 +1,62 @@
+
+<view class='amountBg'>
+  <view class='img'>
+    <image src="https://tse1-mm.cn.bing.net/th/id/OIP-C.mH9YLFEL5YdVxJM82mjVJQHaEo?w=298&h=186&c=7&r=0&o=5&dpr=1.9&pid=1.7" style='width:80px;height:80px; border-radius: 50%;'></image>
+  </view>
+  <!-- 昵称和用户证明 -->
+  <view class='account'>
+    <view class="name">Plute.</view>
+    <view class='manage_text'>其他机构</view>
+  </view>
+  <!-- 设置，从新认证什么的 -->
+  <!-- <view class='set'><image src=''></image></view> -->
+</view>
+<view class='contain'>
+  <view class='order'>
+    <view class='order_text'>功能</view>
+    <view class='cut'></view>
+    <view class='order_list'>
+    <view class='cut'></view>
+      <view class='desc'>
+        <view class="desc_img"><image src='../../images/icon/pay.png'></image></view>
+            <view>活动申请</view>
+        </view>
+    <view class='desc'>
+      <view class='desc_img'><image src='../../images/icon/car.png'></image></view>
+          <view>活动管理</view>
+      </view>
+        <view class='desc'>
+      <view class='desc_img'><image src='../../images/icon/complate.png'></image></view>
+          <view>活动反馈</view>
+      </view>
+    </view>
+  </view>
+  <view class='clear'></view>
+  <view class='item'>
+    <view class='icon'><image src='../../images/icon/address.png'></image></view>
+    <view class='itemname'>
+      <view></view>
+    </view>
+  </view>
+    <view class='hr'></view>
+   <view class='item' >
+    <view class='icon'><image src='../../images/icon/star.png'></image></view>
+    <view class='itemname'>
+      <view></view>
+    </view>
+  </view>
+  <view class='hr'></view>
+  <view class='item'>
+    <view class='icon'><image src='../../images/icon/aggrement.png'></image></view>
+    <view class='itemname'>
+      <view>型</view>
+    </view>
+  </view>
+  <view class='hr'></view>
+  <view class='item'>
+    <view class='icon'><image src='../../images/icon/fankui.png'></image></view>
+    <view class='itemname'>
+      <view>联系方式</view>
+    </view>
+  </view>
+</view>

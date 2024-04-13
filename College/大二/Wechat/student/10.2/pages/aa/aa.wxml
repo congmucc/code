@@ -1,0 +1,4 @@
+<!--pages/aa/aa.wxml-->
+<video id="dance" src="https://kvideo01.youju.sohu.com/af5752b1-7e02-41bc-b0d9-e4d7adff0ad12_0_0.mp4" class="a" danmu-list="{{danmulist}}"></video>
+<input placeholder="请输入弹幕" bindinput="getdanmu"></input>
+<button type="primary" bindtap="send">发送</button>

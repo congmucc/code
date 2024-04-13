@@ -1,0 +1,46 @@
+<view class="amount">
+
+
+</view>
+
+
+<!-- 申请导航栏，点击选择显示隐藏 -->
+<view class="buttom">
+  <view class="nav">
+    <view class="sign">
+      <view wx:for="{{tabs}}" wx:key="id" class="signIcon{{item.isActive ? 'Active':''}}" bindtap="handleItemTap" data-index="{{index}}">
+        <view>
+          <icon class="iconfont {{item.icon}}"></icon>
+        </view>
+        <view>{{item.value}}</view>
+      </view>
+    </view>
+  </view>
+
+
+
+  <!-- 内容
+  https://www.cnblogs.com/crazycode2/p/8274645.html
+   -->
+
+  <veiw class="item" wx:for="{{list}}" wx:key="id">
+    <view class="text">
+      <view class="itemTitle">
+        {{item.title}}
+      </view>
+      <!-- 这是一行 -->
+      <!-- <view class="text2"> -->
+        <view class="itemTime">
+          时间：{{item.startTime}} - {{item.endTime}}
+        </view>
+        <view class="itemSite">
+          地点：{{item.site}}
+        </view>
+      <!-- </view> -->
+      <view class="itemtxt">
+        {{item.content}}
+      </view>
+    </view>
+  </veiw>
+
+</view>

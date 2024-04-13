@@ -1,0 +1,122 @@
+ Page{
+  background-color: #f4f4f4;
+}
+.amountBg{
+  height: 330rpx;
+  background:linear-gradient(to top,#ffffff,#6eb1f5);
+  display: flex;
+  flex-direction: row;
+  
+}
+.img{
+  margin-left:60rpx; 
+  margin-top:50rpx;
+}
+.account{
+  color: #ffffff;
+  margin-left: 30rpx;
+  margin-top: 68rpx;
+}
+.name{
+  font-size: 50rpx;
+  color: black;
+}
+.manage_text{
+  font-size: 30rpx;
+  color: rgb(250, 1, 1);
+  margin-top: 10rpx;
+  border:2rpx solid #8d3f3f;
+  border-radius: 40rpx;
+  text-align: center;
+}
+.set{
+  margin-top: 80rpx;
+  margin-left: 280rpx;
+}
+.set image{
+  width: 46rpx;
+  height: 46rpx;
+}
+.order{
+  width:92%;
+  height: 260rpx;
+  margin:0 auto;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  text-align: center;
+  margin-bottom: 40rpx;
+  margin-top: -80rpx;
+  display: flex;
+  flex-direction: column;
+  box-shadow:0rpx  8rpx  8rpx 3rpx rgb(221, 220, 220);
+}
+.order_text{
+  font-size: 44rpx;
+  color: gray;
+  margin-top: 20rpx;
+  text-align: left;
+  height:60rpx;
+  margin-left: 30rpx;
+}
+.cut{
+  opacity: 0.2;
+  height: 2rpx;
+  margin-top: 20rpx;
+  background-color: #000000;
+}
+.order_list{
+  display: flex;
+  flex-direction:row;
+}
+.desc{
+  color: gray;
+  width: 33%;
+  font-size: 30rpx;
+}
+.item{
+  background-color: #ffffff;
+  display: flex;
+  margin:0 auto;
+  flex-direction: row;
+  height: 100rpx;
+  align-items: center;
+  width: 92%;
+  margin-top: 20rpx;
+  border-radius: 20rpx;
+  box-shadow:0rpx  8rpx  8rpx 3rpx rgb(221, 220, 220);
+}
+.icon{
+  width: 100rpx;
+  text-align: center;
+  margin-top: 16rpx;
+}
+.itemname{
+  color: gray;
+  width: 40%;
+  font-size: 34rpx;
+}
+.hr{
+  height: 2rpx;
+  background-color: #000000;
+  width: 90%;
+  margin: 0 auto;
+  opacity: 0.2;
+}
+.remark{
+  font-weight: normal;
+  margin-top:10rpx; 
+}
+.right{
+  color: #707075;
+  width: 40%;
+  text-align: right;
+}
+.desc_img image{
+  margin-top: 16rpx;
+  width: 90rpx;
+  height: 90rpx;
+}
+.icon image{
+  height: 62rpx;
+  width: 62rpx
+}

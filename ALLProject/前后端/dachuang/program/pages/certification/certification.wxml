@@ -1,0 +1,78 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="content1">
+    <view class="content">
+      <!-- 下拉框 -->
+      <view class="list-msg0">
+        <text style="margin-left: 10rpx; display: block;">请选择您要认证的身份</text>
+        <view class="list-msg1" bindtap="bindShowMsg">
+          <text style="display: block; margin-left: 10rpx; margin-top: -10rpx;">{{peopleSelectWay}}</text>
+          <icon wx:if="{{select == false}}" class="iconfont icon-xiangxia"></icon>
+          <icon wx:if="{{select}}" class="iconfont icon-xiangshang"></icon>
+        </view>
+      </view>
+
+      <!-- 下拉框选项 -->
+      <view class="select_box" wx:if="{{select}}">
+        <view class="select_one" wx:for="{{peopleSelectWayres}}" wx:key="id" bindtap="mySelect" data-name="{{item}}">
+          <icon wx:if="{{peopleSelectWay === item }}" class="iconfont icon-duihao"></icon>
+          <text class="select_one_text">{{item}}</text>
+        </view>
+      </view>
+
+      <view wx:if="{{(peopleSelectWay == '普通学生')||(peopleSelectWay == '志愿者')||(peopleSelectWay == '专业人才')}}">
+        <view class="userName" wx:for="{{peopleAttribute}}" wx:key="id">
+          <view wx:if="{{item.title != '性别'}}">
+            <text class="userNameText">{{item.title}}</text>
+            <input type="text" name="{{item.attribute}}" class="userNameInput" placeholder="请输入{{item.title}}" />
+          </view>
+          <view wx:if="{{item.title === '性别'}}">
+            <text class="userNameText">{{item.title}}</text>
+            <radio-group bindchange="checkboxChange" name="gender">
+              <view class="label_1" wx:for="{{checkboxItems}}" wx:key="id">
+                <radio id="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}"></radio>
+                <label class="label-2-text" for="{{item.name}}"><text>{{item.name}}</text></label>
+              </view>
+            </radio-group>
+          </view>
+        </view>
+
+      </view>
+
+      <view wx:if="{{peopleSelectWay == '政府机构' || peopleSelectWay == '其他机构' || peopleSelectWay == '大众公司'}}">
+        <view class="userName" wx:for="{{governmentAttribute}}" wx:key="id">
+          <text class="userNameText">{{item.title}}</text>
+          <input type="text" name="{{item.attribute}}" class="userNameInput" placeholder="请输入{{item.title}}" />
+        </view>
+      </view>
+
+      <view class='imgbox' wx:if="{{peopleSelectWay !== '请选择你的身份'}}">
+        <!-- 上传图片的文字 -->
+        <view class='title' wx:for="{{peopleSelectWayres}}" wx:key="id">
+          <text class="userNameText" wx:if="{{peopleSelectWay == item}}">请上传{{item}}证明(至多8张图片)</text>
+        </view>
+
+        <!-- https://blog.csdn.net/BeiLinYu/article/details/107685053 -->
+        <!-- 父容器 -->
+        <view class="addImg">
+          <view class="addImgView" wx:for="{{imgs}}" wx:key="id" data-name="{{item}}">
+            <!-- 图片显示 -->
+            <image class="addImgViewImage" src="{{item}}" mode="aspectFit" bindtap="showImage"></image>
+            <!-- 删除按钮 -->
+            <view class="delete" bindtap="deleteImg" data-index="{{index}}">x
+            </view>
+          </view>
+          <view class="addImgView" bindtap="uploadimg">
+            <icon class="iconfont icon-shurukuang-shangchuantupian" name="upImg"></icon>
+          </view>
+        </view>
+      </view>
+
+      <view class='pagefoot' wx:if="{{peopleSelectWay !== '请选择你的身份'}}">
+        <button class='btnblock' form-type="submit">提交</button>
+      </view>
+
+    </view>
+
+  </view>
+
+</form>

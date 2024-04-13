@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <span id="msg"></span>
+    <script>
+        function validataCode(n) {
+            var s="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789"
+            var ret="";
+            for (let index = 0; index < s.length; index++) {
+                var index=Math.floor(Math.random()*62);
+                ret+=s.charAt(index);
+            }
+            return ret;
+        }
+        function show() {
+            document.getElementById("msg").innerHTML=validataCode(4);
+        }
+        window.onload=show;
+    </script>
+</body>
+</html>

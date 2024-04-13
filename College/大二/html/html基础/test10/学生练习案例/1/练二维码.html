@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>划过图标显示二维码</title>
+    <!-- 引入fontaawesome图标库js文件 -->
+    <script src="https://kit.fontawesome.com/dee60bf650.js" crossorigin="anonymous"></script>
+<style>
+    .social-icon{
+    position: fixed;
+    width: 50px;
+    height: 150px;
+    top:300px;
+    right: 0px;
+    display: flex;
+    font-size: 40px;
+    flex-direction: column;
+}
+.social-icon i:hover{
+   color:  #b33589;
+
+}
+.ewm{
+    width: 150px;
+    height:150px;
+    position: fixed;
+    top: 350px;
+    right: 70px;
+    border: 1px soild black;
+    border-radius: 20px;
+    overflow: hidden;
+    display: none;
+}
+
+.ewm>img{
+    width: 150px;
+    height: 150px;
+}
+
+
+</style>
+</head>
+<body>
+    <!-- 用fix固定定位实现的社交图标  onmouseover 是点击显示图片，out是over之后的不点击时的情况 -->
+    <!-- onmouseover 事件发生在鼠标指针移动到元素或它的子元素上时。 -->
+    <!-- 当鼠标指针移出元素或其子元素之一时，会发生 onmouseout 事件 -->
+    <div class="social-icon" onmouseover="mouseOver()" onmouseout="mouseOut()">
+        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+   <!-- 二维码图片的位置 -->
+   <div class="ewm">
+    <img src="./ewm.PNG" alt="">
+   </div>
+   <!-- 添加二维码显示事件-->
+   <script>
+    var ewmElement = document.querySelector(".ewm");
+    function mouseOver() {
+        ewmElement.style.display = "block";
+    }
+    function mouseOut() {
+        ewmElement.style.display = "none";
+    }
+   </script>
+</body>
+</html>

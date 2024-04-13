@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标签的练习</title>
+</head>
+
+<body>
+    <a href="#wb" id="tb">点击这里跳转到一个尾部</a><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <div id="div">这是其他标签</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a href="#tb" name="wb">尾部</a>2<sub>2</sub>2<sup>2</sup>
+
+<form action="./JavaScript.html">
+   数字1： <input type="text" id="t1">
+    <select  id="s1">
+        <option >+</option>
+        <option >-</option> 
+        <option >*</option>
+        <option >/</option>
+    </select>
+   数字2： <input type="text" id="t2">
+   = <input type="text" id="t3">
+   <input type="button" value="计算" id="btn">
+   <!-- <input type="image" src="./img.png" width="50px" alt="">
+   <input type="submit">
+   <input type="reset" value="清空"> -->
+</form>
+<script>
+ document.getElementById("btn").onclick =function(){
+    var t1=parseFloat(document.getElementById('t1').value) ;
+    var t2=parseFloat( document.getElementById('t2').value);
+    var s1=document.getElementById('s1').value;
+    var t3=document.getElementById('t3');
+
+    if(s1=="+"){ t3.value=t1+t2;}
+ }
+</script>
+
+ <!-- <form>
+        数字1：<input type="text" id="t1">
+        <select id="s1">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>
+        数字2：<input type="text" id="t2">
+        <span>=</span>
+        <input type="text" id="result">
+        <input type="button" value="计算">
+    </form>
+    <script>
+        document.querySelector('[type="button"]').onclick = function () {
+            var t1 = parseFloat(document.querySelector('#t1').value);
+            var t2 = parseFloat(document.querySelector('#t2').value);
+            var s1 = document.querySelector('#s1').value;
+            var result = document.querySelector('#result');
+            if (s1 == "+") {
+                result.value = t1 + t2;
+            }
+            if (s1 == "-") {
+                result.value = t1 - t2;
+            }
+            if (s1 == "*") {
+                result.value = t1 * t2;
+            }
+            if (s1 == "/") {
+                if (t2 == 0) {
+                    alert("输入有错！");
+                }
+                else {
+                    result.value = t1 / t2;
+                }
+            }
+        }
+    </script>  -->
+</body>
+</html>

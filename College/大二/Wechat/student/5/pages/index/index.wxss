@@ -1,0 +1,28 @@
+.aa{
+  background-color: chartreuse;
+  font-size: 30px;
+  text-align: left;
+  
+ 
+}
+.bb{
+  background-color: chartreuse;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: line-through red;
+  border:blue solid;
+  margin:  30px ;
+}
+.cc{
+  background-color: chartreuse;
+  font-size: 30px;
+  text-align: right;
+}
+.back{
+  border: 3px solid rgb(14, 233, 69);
+  font-size: 15px;
+  width: 300px;
+  height: 250px;
+  margin:10px 7px;
+ background-color: ivory;
+}

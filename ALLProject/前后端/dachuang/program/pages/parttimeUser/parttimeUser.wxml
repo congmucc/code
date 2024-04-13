@@ -1,0 +1,62 @@
+
+<view class='amountBg'>
+  <view class='img'>
+    <image src="https://tse1-mm.cn.bing.net/th/id/OIP-C.mH9YLFEL5YdVxJM82mjVJQHaEo?w=298&h=186&c=7&r=0&o=5&dpr=1.9&pid=1.7" style='width:80px;height:80px; border-radius: 50%;'></image>
+  </view>
+  <!-- 昵称和用户证明 -->
+  <view class='account'>
+    <view class="name">测试用户</view>
+    <view class='manage_text'>大众公司</view>
+  </view>
+  <!-- 设置，从新认证什么的 -->
+  <view class='set'><icon class="iconfont icon-guanli"></icon></view>
+</view>
+<view class='contain'>
+  <view class='order'>
+    <view class='order_text'>功能</view>
+    <view class='cut'></view>
+    <view class='order_list'>
+    <view class='cut'></view>
+      <view class='desc' bindtap="goParttime">
+        <view class="desc_img"><icon class="iconfont icon-shenqing"></icon></view>
+            <view>发布兼职</view>
+        </view>
+    <view class='desc' bindtap="goParttimeManagement">
+      <view class='desc_img'><icon class="iconfont icon-project_management"></icon></view>
+          <view>兼职管理</view>
+      </view>
+        <view class='desc' bindtap="goParttimeFeedback">
+      <view class='desc_img'><icon class="iconfont icon-fankui"></icon></view>
+          <view>兼职反馈</view>
+      </view>
+    </view>
+  </view>
+  <view class='clear'></view>
+  <view class='item' bindtap="goState">
+    <view class='icon'><icon class="iconfont icon-qingjiashenqing"></icon></view>
+    <view class='itemname'>
+      <view>发布状态</view>
+    </view>
+  </view>
+    <view class='hr'></view>
+   <view class='item' >
+    <view class='icon'><icon class="iconfont icon-wodexiaoxi"></icon></view>
+    <view class='itemname'>
+      <view>我的消息</view>
+    </view>
+  </view>
+  <view class='hr'></view>
+  <view class='item'>
+    <view class='icon'><icon class="iconfont icon-shoucang"></icon></view>
+    <view class='itemname'>
+      <view>收藏记录</view>
+    </view>
+  </view>
+  <view class='hr'></view>
+  <view class='item'>
+    <view class='icon'><icon class="iconfont icon-lianxiren"></icon></view>
+    <view class='itemname'>
+      <view>联系方式</view>
+    </view>
+  </view>
+</view>

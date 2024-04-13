@@ -1,0 +1,272 @@
+page {
+  background-color: #eee;
+  background-size:100% 100%;
+  height: auto;
+  /* 全局改这个 */
+  padding-top: 150rpx;
+  padding-bottom: 150rpx;
+  border-bottom: 5 10rpx;
+}
+
+
+.content{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-direction: column;
+  /* opacity: 0; */
+  /* border: 4rpx solid red; */
+}
+
+/* 加个认证身份 */
+.list-msg0{
+  background-color: #fff;
+  border-radius: 10rpx;
+  width: 95%;
+  margin-left: 18rpx;
+  height: 230rpx;
+  margin-top: 20rpx;
+  padding-top: 10rpx;
+    /* 圆角 */
+    border-radius: 15rpx;
+    box-shadow:0rpx 2rpx 8rpx 8rpx rgb(221, 220, 220);
+}
+
+
+
+/* 下拉框view */
+.list-msg1 {
+  margin-top: 30rpx;
+  border: 1rpx solid #ccc;
+  padding-bottom: 10rpx;
+  border-radius: 10rpx;
+  width: 95%;
+  margin-left: 18rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  padding-top: 10rpx;
+}
+
+/* 下拉框动画 */
+@keyframes shadowSelect {
+  from {
+    transform: translateY(-15rpx);
+  }
+  to {
+  }
+}
+
+/* 下拉框选项 */
+.select_box {
+  width: 90%;
+  left: 38rpx;
+ background-color: #ffff;
+ position: absolute;
+ top: 370rpx;
+ z-index: 3;
+ overflow: hidden;
+ animation: myfirst 0.5s;
+ /* 圆角 */
+ border-radius: 15rpx;
+ box-shadow:0rpx 2rpx 8rpx 8rpx rgb(221, 220, 220);
+ height: 460rpx;
+ overflow: inherit;
+ /* 过渡的内容和时间 
+ transition: all 1s; */
+ /* 动画的名字 */
+ animation-name: shadowSelect;
+ /* 动画的时间 */
+ animation-duration: 0.3s;
+ /* 添加动画贝塞尔属性 */
+ animation-timing-function: cubic-bezier(.59,.59,.69,.68);
+}
+
+/* 下拉详细选项 */
+.select_one{
+ margin-top: 15rpx;
+ height: 60rpx;
+ width: 100%;
+ font-size: 30rpx;
+}
+
+.select_one:active{
+  background-color: #f2f2f2;
+ }
+
+
+.select_one_text{
+  margin-left: 38rpx;
+  line-height: 60rpx;
+}
+
+/* 姓名view */
+.userName{
+  margin-top: 15rpx;
+  padding-bottom: 30rpx;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  background-color: #fff;
+  border-radius: 15rpx;
+  box-shadow:0rpx 2rpx 8rpx 8rpx rgb(221, 220, 220);
+  width: 95%;
+  margin-left: 18rpx;
+}
+
+/* 姓名文字view */
+.userNameText {
+  display: block; 
+  padding-top: 20rpx;
+ /* padding-top: 60rpx; */
+ margin-left: 10rpx;
+ margin-right: 20rpx;
+}
+
+/* 姓名输入框view */
+.userNameInput {
+  border: 3rpx solid #ccc;
+  height: 60rpx;
+  width: 630rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  font-size: 32rpx;
+  padding: 20rpx;
+  border-radius: 15rpx;
+}
+
+.userNameInput:hover {
+  border: 1rpx solid blue;
+}
+
+.label_1 {
+  margin-top: 20rpx;
+  margin-left: 15rpx;
+}
+
+/* 上传图片背景 */
+.imgbox {
+  margin-top: 20rpx;
+  padding-bottom: 50rpx;
+  height: auto;
+  background-color: #fff;
+  border-radius: 15rpx;
+  width: 95%;
+  margin-left: 18rpx;
+}
+
+/* 上传图片的文字 */
+.title {
+  margin-bottom: 20rpx;
+ }
+
+/* 上传图片父容器 */
+.addImg {
+  /* 弹性布局 */
+  display: flex;
+  /* 高度自动 */
+  /* 进行换行 */
+  flex-wrap: wrap;
+  /* 侧轴对齐方式  从开始对齐 */
+  align-items:flex-start;
+
+}
+
+
+/* 上传图片 */
+.addImgView {
+  background-color: #eee;
+  width: 30.5%;
+  height: 220rpx;
+  margin-left: 15rpx;
+  margin-top: 15rpx;
+  overflow: hidden;
+  border-radius: 10rpx;
+}
+
+.addImgViewImage {
+  width: 200rpx;
+  height: 220rpx;
+  margin-left: 20rpx;
+  z-index: 1;
+}
+
+
+.iconjia:hover{
+  background-color: #ccc;
+}
+/* 删除 */
+.delete {
+  position: relative;
+  margin-top: -240rpx;
+  margin-left: 170rpx;
+  width: 50rpx;
+  height: 60rpx;
+  text-align:center;
+  background-color: black;
+  color: #fff;
+  font-size: 45rpx;
+  border-radius: 10rpx;
+  z-index: 300;
+}
+
+
+/* 按钮 */
+.btnblock {
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+  background-color: #1e6fff;
+  color: white;
+  font-weight: 400;
+  font-size: 36rpx;
+}
+
+@font-face {
+  font-family: "iconfont"; /* Project id 4021625 */
+  src: url('//at.alicdn.com/t/c/font_4021625_qk20l78y2vh.woff2?t=1690729847278') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4021625_qk20l78y2vh.woff?t=1690729847278') format('woff'),
+       url('//at.alicdn.com/t/c/font_4021625_qk20l78y2vh.ttf?t=1690729847278') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xiangshang:before {
+  content: "\e600";
+  position: absolute;
+  margin-top: -17rpx;
+  left: 640rpx;
+  
+}
+
+.icon-xiangxia:before {
+  content: "\e601";
+  position: absolute;
+  display: flex;
+  margin-top: -17rpx;
+  left: 640rpx;
+}
+
+.icon-duihao:before {
+  content: "\eaf1";
+  position: absolute;
+  margin-top: -25rpx;
+  display: flex;
+}
+
+.icon-shurukuang-shangchuantupian:before {
+  content: "\e605";
+  font-size: 64rpx;
+  margin-left: 80rpx;
+  line-height: 200rpx;
+}
+
+.icon-cha:before {
+  content: "\e686";
+}

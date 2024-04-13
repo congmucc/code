@@ -1,0 +1,9 @@
+/* pages/home/home.wxss */
+.aa{
+  border: 3px solid rgb(219, 13, 238);
+}
+
+input{
+  border: 2px solid black;
+  margin: 30rpx;
+}

@@ -1,0 +1,199 @@
+Page{
+  background-color: #f4f4f4;
+  padding-top: 150rpx;
+  border-radius: 20rpx;
+}
+
+
+
+.amountBg{
+  height: 330rpx;
+  background:linear-gradient(to top,#ffffff,#6eb1f5);
+  display: flex;
+  flex-direction: row;
+  border-radius: 20rpx;
+}
+.img{
+  margin-left:60rpx; 
+  margin-top:50rpx;
+}
+.account{
+  color: #ffffff;
+  margin-left: 30rpx;
+  margin-top: 68rpx;
+  width:350rpx;
+}
+.name{
+  font-size: 40rpx;
+  color: black;
+}
+.manage_text{
+  font-size: 30rpx;
+  color: rgb(250, 1, 1);
+  margin-top: 10rpx;
+  border:2rpx solid #8d3f3f;
+  border-radius: 40rpx;
+  text-align: center;
+  width:200rpx;
+}
+.set{
+  margin-top: 90rpx;
+  margin-left: 50rpx;
+}
+
+.order{
+  width:92%;
+  padding-bottom: 50rpx;
+  margin:0 auto;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  margin-top: -60rpx;
+  box-shadow:0rpx  8rpx  8rpx 3rpx rgb(221, 220, 220);
+  overflow: hidden;
+}
+.order_text{
+  font-size: 50rpx;
+  color: gray;
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid gray;
+}
+
+
+.order_main {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
+  padding-top: 40rpx;
+}
+
+.order_list1 {
+  width: 280rpx;
+  height: 380rpx;
+  background-color: #eee;
+      /* 圆角 */
+      border-radius: 15rpx;
+}
+
+.order_list1:active {
+  background-color: #ccc;
+}
+
+.order_list{
+  height: 400rpx;
+  width: 300rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: #eee; */
+      /* 圆角 */
+      border-radius: 15rpx;
+}
+
+.desc{
+  color: gray;
+  margin-top: 120rpx;
+  text-align: center;
+
+}
+
+.list_desc {
+  color: gray;
+  text-align: center;
+  background-color: #eee;
+  height: 180rpx;
+  width: 260rpx;
+      /* 圆角 */
+    border-radius: 15rpx;
+}
+.list_desc:active {
+  background-color: #ccc;
+}
+
+.desc_icon {
+  margin-top: 20rpx
+}
+
+.desc_text {
+  margin-top: 20rpx;
+}
+
+
+.item{
+  background-color: #ffffff;
+  display: flex;
+  margin:0 auto;
+  flex-direction: row;
+  height: 150rpx;
+  align-items: center;
+  width: 92%;
+  margin-top: 20rpx;
+  border-radius: 20rpx;
+  box-shadow:0rpx  8rpx  8rpx 3rpx rgb(221, 220, 220);
+}
+.icon{
+  width: 100rpx;
+  text-align: center;
+}
+.itemname{
+  color: gray;
+  width: 200rpx;
+  font-size: 34rpx;
+}
+
+
+
+
+
+@font-face {
+  font-family: "iconfont"; /* Project id 4051568 */
+  src: url('//at.alicdn.com/t/c/font_4051568_6xf7gvn7ie7.woff2?t=1683296552052') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4051568_6xf7gvn7ie7.woff?t=1683296552052') format('woff'),
+       url('//at.alicdn.com/t/c/font_4051568_6xf7gvn7ie7.ttf?t=1683296552052') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 32px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-qingjiashenqing:before {
+  font-size: 80rpx;
+  font-weight: 800;
+  content: "\e69b";
+}
+
+.icon-fankui:before {
+  content: "\e738";
+}
+
+
+.icon-project_management:before {
+  font-size: 80rpx;
+  content: "\e60c";
+}
+
+.icon-lianxiren:before {
+  content: "\e65d";
+}
+
+.icon-shenqing:before {
+  font-size: 100rpx;
+  content: "\e7e3";
+}
+
+.icon-zhuangtaixinxi:before {
+  font-size: 64rpx;
+  content: "\e639";
+}
+
+.icon-guanli:before {
+  content: "\e993";
+  font-size: 64rpx;
+}
+

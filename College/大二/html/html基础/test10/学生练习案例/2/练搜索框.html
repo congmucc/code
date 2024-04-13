@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个性化智能搜索</title>
+    <script src="https://kit.fontawesome.com/dee60bf650.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        header {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: linear-gradient(to right, #5fb4e5, #f6b6f3);
+            z-index: 10;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0px;
+        }
+        /*头部导航图标开始*/
+        header .logo {
+            text-align: center;
+        }
+        header .logo img {
+            width: 50%;
+        }
+        header .logo img:hover {
+            transform: rotate(20deg);
+        }
+        /*头部列表菜单开始*/
+        header .navigation {
+            height: 40px;
+        }
+        .navigation>ul {
+            list-style: none;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .navigation>ul>li {
+            float: left;
+            margin-left: 20px;
+        }
+        .navigation>ul>li>a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .navigation>ul>li>a:hover {
+            color: yellow;
+        }
+        /*头部搜索栏开始*/
+        header .search {
+            width: 300px;
+            height: 40px;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .search>input {
+            width: 300px;
+            height: 40px;
+            background: transparent;
+            outline: none;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            padding-left: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .search>i {
+            font-size: 25px;
+            opacity: .3;
+            padding-right: 10px;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+        /*设置正在加载的动画*/
+        .ball {
+            width: 240px; /*设置动画盒子的整体样式*/
+            height: 63px;  /*设置整体大小*/
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            text-align: center; /*设置对齐方式*/
+            color: #fff; /*设置文字颜色*/
+           /*  display: none; 设置显示方式*/
+            background: rgba(0, 0, 0, 0.5); /*设置背景颜色*/
+            display: none;
+        }
+        .ball>p {
+            line-height: 30px; /*设置加载的提示文字的样式*/  /*设置行高*/
+        }
+        .ball>div {
+            width: 18px; /*设置动画中三个小球的样式*/
+            height: 18px;  /*设置大小*/
+            background: #1abc9c;  /*设置背景颜色*/
+            border-radius: 100%;  /*设置圆角边框*/
+            display: inline-block;  /*设置其显示方式  线性变化的过程*/
+            animation: move 1.4s infinite ease-in-out both; /*添加动画*/
+        }
+        @keyframes move {  /*创建动画*/
+             /*可以百度一下看一下transform怎么用，创建动画*/
+            0% { transform: scale(0) }
+            40% {transform: scale(1.0)}
+            100% {transform: scale(0)}
+        }
+        .ball .ball1 {   /*设置第一个小球的动画延迟*/
+            animation-delay: 0.16s;
+        }
+        .ball .ball2 {  /*设置第二个小球的动画延迟*/
+            animation-delay: 0.32s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 08首页布局中的头部header代码 -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" usemap="#log" />
+            <map name="log">
+                <area shape="circle" coords="30,30,20" href="http://www.baidu.com" target="_blank">
+            </map>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="content.html">精彩内容</a></li>
+                <li><a href="photowall.html">照片墙</a></li>
+                <li><a href="#">联系我</a></li>
+                <li><a href="register.html">注册</a></li>
+                <li><a href="login.html">登录</a></li>
+            </ul>
+        </div>
+        <!-- 右侧搜索框代码 -->
+        <div class="search">
+            <input type="text" placeholder="Click Here To Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+    <!-- 智能搜索框代码 -->
+    <div class="ball" id="ball">
+        <p>正在搜索,请稍后~</p>
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="ball3"></div>
+    </div>
+    <!-- 添加搜索框显示事件 -->
+    <script>
+        // # 是通过id进行选取元素，. 是通过类选取元素
+        var searchBall = document.querySelector("#ball");
+        var searchIcon = document.querySelector(".search>i");
+        //这种交互的函数最好在script里面添加
+        searchIcon.onclick = function() {
+            if (searchBall.style.display == "none") {
+                searchBall.style.display = "block";
+            } else {
+                searchBall.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

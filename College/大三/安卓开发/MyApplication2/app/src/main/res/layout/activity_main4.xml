@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@color/design_default_color_secondary">
+
+        <TextView
+            android:id="@+id/e4_relative_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="RelativeLayout"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/e4_relative_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/e4_relative_top"
+            android:layout_centerHorizontal="true"
+            android:text="@string/app_person_title"
+            android:textSize="32sp" />
+
+        <EditText
+            android:id="@+id/e4_relative_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/e4_relative_title"
+            android:textSize="18sp"
+            android:background="@color/cardview_shadow_start_color"
+            android:hint="@string/e3_name" />
+        <EditText
+            android:id="@+id/e4_relative_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/e4_relative_name"
+            android:textSize="18sp"
+            android:hint="@string/e3_sex" />
+
+        <EditText
+            android:id="@+id/e4_relative_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/e4_relative_sex"
+            android:textSize="18sp"
+            android:hint="@string/e3_age" />
+
+        <EditText
+            android:id="@+id/e4_relative_studentid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/e4_relative_age"
+            android:textSize="18sp"
+            android:hint="@string/e3_studentid" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_below="@+id/e4_relative_studentid"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp">
+
+            <Button
+                android:id="@+id/e4_relative_button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="20dp"
+
+                android:text="@string/app_button_cancel" />
+
+            <Button
+                android:id="@+id/e4_relative_button_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="88dp"
+                android:layout_marginEnd="8dp"
+
+                android:layout_toRightOf="@+id/e4_relative_button_cancel"
+                android:text="@string/app_button_confirm" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:background="@color/material_dynamic_primary90">
+
+        <TableRow
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TableLayout"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/e3_name"
+                android:textSize="18sp" />
+        </TableRow>
+        <TableRow
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别" />
+            <EditText
+                android:id="@+id/editGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="性别" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年龄" />
+            <EditText
+                android:id="@+id/editAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="年龄" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学号" />
+            <EditText
+                android:id="@+id/editStudentId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="学号" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:layout_marginStart="8dp" />
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:layout_marginEnd="8dp" />
+        </TableRow>
+
+    </TableLayout>
+
+
+
+
+
+</LinearLayout>

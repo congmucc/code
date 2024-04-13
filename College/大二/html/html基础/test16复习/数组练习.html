@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ji">xianshi </div>
+    <input type="button" value="显示" id="ijna">
+    <script>
+               var depts=[
+		{
+			num:5001,
+			name:"财务部",
+			emps:[
+            {number:101,name:"张三",skills:["报销","统计"]},
+            {number:101,name:"李四",skills:["出纳","采购"]},
+            {number:101,name:"王五",skills:["会计","核算"]},
+			]
+		}
+        ,
+		{
+			num:5002,
+			name:"研发部",
+			emps:[
+				{number:101,name:"张三丰",skills:["Java","C++"]},
+                {number:102,name:"郭靖",skills:["C","Java"]},
+                {number:101,name:"张无忌",skills:["Java","C++"]}
+			]
+		}
+		]; 
+        var msg=document.getElementById('ijna');
+        var jii=document.getElementById('ji');
+        msg.onclick=function(){
+            var innermsg="";
+            for(var i = 0; i < depts.emps.length; i++) {
+                var skilmsg="";
+                for (var j = 0; j < depts.emps[i].skills.length;j++) {
+                    skilmsg += depts.emps[i].skills[j] + " ";
+                }
+                innermsg += "部门姓名: " + depts[i].name + "部门编号: " + depts[i].num + "员工姓名:" + depts[i].emps[j].name + "员工编号: " + depts[i].emps[i].number + "员工能力：" +skilmsg;
+            }
+            jii.innerHTML=innermsg;
+
+        }
+ 
+    </script>
+</body>
+</html>

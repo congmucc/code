@@ -1,0 +1,27 @@
+.aa{
+    height: 400px;
+    width: 400px;
+    background-color: moccasin;
+}
+.bb{
+    
+    margin: 500px 50px 500px;
+    text-align: center;
+}
+.text{
+    text-align: center;
+    margin: 150px;
+}
+.cc{
+    background-color:rgb(12, 125, 153);
+    margin: 30px 10px;
+    height: 50px;
+    width:300px;
+    border-radius: 30px;
+    text-align: center;
+}
+.dd{
+    margin: 30px;
+    left: -35px;
+    
+}

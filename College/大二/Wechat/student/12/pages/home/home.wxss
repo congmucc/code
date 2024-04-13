@@ -1,0 +1,24 @@
+.aa{
+  height: 180px;
+}
+.bb{
+  border: 2px solid;
+  border-color: darkorange;
+  border-radius: 15px;
+
+}
+.dd{
+  width: 105px;
+  height: 120px;
+}
+.ee{
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.ff{
+  margin-right: 10px;
+  margin-left: 50px;
+}
+.ss{
+  margin-inline-start: 290px;
+}

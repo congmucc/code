@@ -1,0 +1,128 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="content">
+    <!-- 下拉框 -->
+    <view class="list-msg1" bindtap="bindShowMsg">
+      <text>{{peopleSelectWay}}</text>
+      <icon class="iconfont icon-xiasanjiao"></icon>
+    </view>
+
+    <!-- 下拉框选项 -->
+    <view class="select_box" wx:if="{{select}}">
+        <view class="select_one" bindtap="mySelect" data-name="普通学生">普通学生</view>
+        <view class="select_one" bindtap="mySelect" data-name="志愿者">志愿者</view>
+        <view class="select_one" bindtap="mySelect" data-name="专业人才">专业人才</view>
+        <view class="select_one" bindtap="mySelect" data-name="政府机构">政府机构</view>
+        <view class="select_one" bindtap="mySelect" data-name="其他机构">其他机构</view>
+        <view class="select_one" bindtap="mySelect" data-name="大众公司">大众公司</view>
+    </view>
+    
+    <view wx:if="{{(peopleSelectWay == '普通学生')||(peopleSelectWay == '志愿者')||(peopleSelectWay == '专业人才')}}">
+      <view class="userName">
+        <text class="userNameText">学校</text>
+        <input type="text" name="orderUserUniv" class="userNameInput" placeholder="请输入学校名"/>
+      </view>
+      
+      <view class="userName">
+        <text class="userNameText">学院</text>
+        <input type="text" class="userNameInput" name="orderUserAcad" placeholder="请输入学院"/>
+      </view>
+
+
+      <view class="userName">
+        <text class="userNameText">专业</text>
+        <input type="text" class="userNameInput" name="orderUserMajor"  placeholder="请输入专业"/>
+      </view>
+
+      <view class="userName">
+        <text class="userNameText">姓名</text>
+        <input type="text" class="userNameInput" name="orderUserName" placeholder="请输入姓名"/>
+      </view>
+
+      <view class="userName">
+        <text class="userNameText">性别</text>
+        <input type="text" class="userNameInput" name="orderUserSex" placeholder="请输入性别"/>
+      </view>
+      
+      <view class="userName">
+        <text class="userNameText">年级</text>
+        <input type="text" class="userNameInput" name="orderUserGrade" placeholder="请输入年级"/>
+      </view>
+
+      <view class="userName">
+        <text class="userNameText">学号</text>
+        <input type="text" name="orderUserCode" class="userNameInput" placeholder="请输入学号"/>
+      </view>
+    <view class='title'>
+      <text wx:if="{{peopleSelectWay == '普通学生'}}">请上传学生证:</text>
+
+      <text wx:if="{{peopleSelectWay == '志愿者'}}">请上传志愿者证:</text>
+
+      <text wx:if="{{peopleSelectWay == '专业人才'}}">请上传专业人才证:</text>
+    </view>
+      
+    </view>
+   
+   <view wx:if="{{peopleSelectWay == '政府机构'}}">
+    <view class="userName">
+        <text class="userNameText">政府单位</text>
+        <input type="text" name="orderUserUniv" class="userGaNameInput" placeholder="请输入政府单位名"/>
+    </view>
+
+    <view class="userName">
+        <text class="userNameText">政府类型</text>
+        <input type="text" name="orderUserUniv" class="userGaClassInput" placeholder="请输入政府类型"/>
+    </view>
+
+    <view class='title'>
+      <text wx:if="{{peopleSelectWay == '政府机构'}}">请上传政府证明:</text>
+    </view>
+   </view>
+
+   <view wx:if="{{peopleSelectWay == '其他机构'}}">
+    <view class="userName">
+        <text class="userNameText">机构单位</text>
+        <input type="text" name="orderUserUniv" class="userInstitutionNameInput" placeholder="请输入机构单位名"/>
+    </view>
+
+    <view class="userName">
+        <text class="userNameText">机构类型</text>
+        <input type="text" name="orderUserUniv" class="userInstitutionClassInput" placeholder="请输入机构类型"/>
+    </view>
+
+    <view class='title'>
+      <text wx:if="{{peopleSelectWay == '其他机构'}}">请机构政府证明:</text>
+    </view>
+   </view>
+    
+   <view wx:if="{{peopleSelectWay == '大众公司'}}">
+    <view class="userName">
+        <text class="userNameText">公司单位</text>
+        <input type="text" name="orderUserUniv" class="userCompanyNameInput" placeholder="请输入公司单位名"/>
+    </view>
+
+    <view class="userName">
+        <text class="userNameText">公司类型</text>
+        <input type="text" name="orderUserUniv" class="userCompanyClassInput" placeholder="请输入公司类型"/>
+    </view>
+
+    <view class='title'>
+      <text wx:if="{{peopleSelectWay == '大众公司'}}">请大众公司证明:</text>
+    </view>
+   </view>
+    
+    <view class='imgbox'>
+      <block>
+        <button bindtap="uploadimg" wx:if="{{showImage_url == ''}}">+</button>
+        <button bindtap="uploadimg" wx:if="{{showImage_url != ''}}">更换图片</button>
+        <image wx:if="{{showImage_url != ''}}" src='{{showImage_url}}'></image>   
+      </block>
+    </view>
+   
+    
+    <view class='pagefoot'>
+      <button class='btnblock' form-type="submit" bindtap="jumpActivity">提交</button>
+    </view>
+
+
+  </view>
+ </form>

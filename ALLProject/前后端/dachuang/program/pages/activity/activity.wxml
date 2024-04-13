@@ -1,0 +1,54 @@
+<form bindsubmit="formSubmits" bindreset="formReset">
+  <view class="content">
+    <view class="userName" wx:for="{{nameType}}" wx:key="id">
+      <view wx:if="{{item.title !== '活动开始时间' && item.title !== '活动结束时间' && item.title !== '活动地点' && item.title !== '活动内容' }}">
+        <text class="userNameText">{{item.title}}</text>
+        <input type="{{item.type}}" name="{{item.attribuate}}" class="userNameInput" placeholder="请输入{{item.title}}" value="{{item.value}}" />
+      </view>
+      <view wx:if="{{item.title === '活动开始时间'}}">
+        <text class="userNameText">{{item.title}}</text>
+        <picker class="userNameInput" mode="date" header-text="选择时间" value="{{item.value}}" bindchange="bindDateChange" name="{{item.attribuate}}">
+          <view class="font30">
+            <text class="color3">时间：</text>
+            <text class="color6">{{item.value}}</text>
+            <text class="timeIcon">▼</text>
+          </view>
+        </picker>
+      </view>
+      <view wx:if="{{item.title === '活动结束时间'}}">
+        <text class="userNameText">{{item.title}}</text>
+        <picker class="userNameInput" mode="date" header-text="选择时间" value="{{item.value}}" bindchange="bindDateChange2" name="{{item.attribuate}}">
+          <view class="font30">
+            <text class="color3">时间：</text>
+            <text class="color6">{{item.value}}</text>
+            <text class="timeIcon">▼</text>
+          </view>
+        </picker>
+      </view>
+
+      <view wx:if="{{item.title == '活动地点'}}">
+        <text class="userNameText">{{item.title}}</text>
+        <picker class="userNameInput" mode="region" header-text="选择地点" value="{{item.value}}" bindchange="bindRegionChange" name="{{item.attribuate}}">
+          <view class="font30">
+            <text class="color3">地点：</text>
+            <text class="color6">{{item.value}}</text>
+            <text class="regionIcon">▼</text>
+          </view>
+        </picker>
+      </view>
+
+      <view wx:if="{{item.title == '活动内容'}}">
+        <text class="userNameText">{{item.title}}</text>
+        <textarea name="{{item.attribuate}}" class="userNameInput" placeholder="请输入{{item.title}}" maxlength="2000" value="{{item.value}}" ></textarea>
+      </view>
+
+
+    </view>
+
+
+
+    <view class='pagefoot'>
+      <button class='btnblock' form-type="submit">提交</button>
+    </view>
+  </view>
+</form>

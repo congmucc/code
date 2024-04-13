@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的选择器</title>
+   <!-- <link rel="stylesheet" href="style.css"/> -->
+   <style>
+    /* 集体选择器 */
+    h2,span{
+        color: red;
+    }
+    /* 后代选择器  >儿子选择器*/
+    h2 span{
+        color: rgb(29, 20, 20);
+    }
+    h2>p{
+        color: blueviolet;
+    }
+    /* 相邻选择器 ~ 后边的都有*/
+    h2~span{
+        color: blue;
+    }
+    h2+span{/* 相邻选择器 + 后边的第一个*/
+        color: yellow;
+    }
+    /* 属性选择器 */
+    p[name="center"]{
+        text-align: center;
+    }
+    /* 普通盒子模型 */
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+        border: 10px solid black;
+        padding: 100px 20px 20px;
+        margin:70px auto;
+        border-radius: 50%;
+        overflow: hidden;
+        text-align: center;
+    }
+    .box:hover{
+        transform: rotate(30deg);
+    }
+    /* 怪异盒子模型 */
+    .bs{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(12, 18, 176);
+        box-sizing: border-box;
+        border: 10px solid black;
+        padding: 20px;
+        margin:50px ;
+        border-radius: 50px;
+    }
+    .bs:hover{
+        transform: translateY(-10px);
+    }
+   </style>
+</head>
+
+<body>
+    <h2>hello <p>p的内容<span>world</span></p></h2>
+    <h2 name="center">hello </h2>
+    <span>world</span> 
+    <p name="center">hello</p>
+    <span>world</span> 
+    <div class="box">这是普通的盒子</div>
+    <div class="bs">这是怪异盒子</div>
+</body>
+</html>

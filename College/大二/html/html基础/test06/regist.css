@@ -1,0 +1,84 @@
+body {
+  color: brown;
+  font-size: 20px;
+  letter-spacing: 1px;
+  background-image: url(bg.jpg);
+  /* background-repeat:repeat-y;
+   background-size: 100%; */
+}
+
+/*CSS内部嵌入样式：2、通过id选择器 但是id的值在同一个HTML中不能重复  */
+#fl1 {
+  text-align: center;
+  border: solid 2px rgb(250, 143, 85);
+}
+
+#fl2 {
+  border: dashed 2px white;
+  color: rgb(14, 14, 14);
+  background-color: rgb(251, 196, 163);
+  text-align: left;
+}
+
+#fl3 {
+  text-align: center;
+  border: solid 2px rgb(145, 152, 245);
+  justify-content: center;
+  align-items: center;
+}
+
+.regform {
+  background-color: rgba(207, 165, 217, 0.5);
+  width: 700px;
+  margin: 0 auto;
+  border-radius: 50px;
+  padding: 40px;
+  line-height: 50px;
+}
+
+.leg {
+  font-size: 25px;
+  color: purple;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.sub {
+  margin: 20px;
+}
+
+input[type=text],
+input[type=password] {
+  width: 40%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 25px;
+}
+
+input[type=number] {
+  height: auto;
+  width: 140px;
+}
+
+input[type=submit],
+input[type=reset] {
+  width: 45%;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input:focus {
+  background-color: antiquewhite;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=reset]:hover {
+  background-color: #d2dad3;
+}

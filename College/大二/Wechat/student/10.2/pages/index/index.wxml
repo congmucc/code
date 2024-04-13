@@ -1,0 +1,10 @@
+
+<view>
+<view>单击打开新的页面</view>
+<navigator url="/pages/aa/aa">
+<button type="primary">jump</button>
+</navigator>
+
+
+
+</view>

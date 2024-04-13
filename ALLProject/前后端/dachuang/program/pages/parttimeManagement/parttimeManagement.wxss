@@ -1,0 +1,126 @@
+
+/* 下划线 */
+.cut{
+  opacity: 0.2;
+  height: 2rpx;
+  margin-top: 20rpx;
+  background-color: #000000;
+}
+
+/* 背景下半部分 */
+
+.bottom{
+  width:92%;
+  height: 1100rpx;
+  margin:0 auto;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  margin-bottom: 40rpx;
+  margin-top: 10rpx;
+  box-shadow:0rpx  8rpx  8rpx 3rpx rgb(221, 220, 220);
+  border-bottom: 1rpx solid #ccc;
+}
+
+.sign{
+  display: flex;
+  text-align: center;
+  margin-bottom: 40rpx;
+  
+}
+
+.signIcon{
+  margin-top: 16rpx;
+  width: 90rpx;
+  height: 90rpx;
+  width: 33%;
+  font-size: 30rpx;
+}
+
+/* 内容列表 */
+
+/* .item{
+
+} */
+
+
+.text{
+  display: flex;
+  height: 200rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.text:active{
+  background-color:rgb(207, 255, 255);
+}
+
+.text1{
+  width: 60%;
+  height: 200rpx;
+}
+
+/* 内容列表标题 */
+.itemTitle{
+  font-size: 50rpx;
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 超出隐藏 */
+  text-overflow: ellipsis; /* 超出部分显示省略号 */
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}
+/* 内容列表内容 */
+.itemtxt{
+  font-size: 30rpx;
+  /* color: rgb(107, 105, 105); */
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 超出隐藏 */
+  text-overflow: ellipsis; /* 超出部分显示省略号 */
+  margin-top: 30rpx;
+}
+/* 时间地点父类 */
+.text2{
+  font-size: 35rpx;
+}
+
+
+/* 薪资 */
+.itemSalary{
+  margin-top: 30rpx;
+
+}
+
+/*  */
+.itemSite{
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 超出隐藏 */
+  text-overflow: ellipsis; /* 超出部分显示省略号 */
+  margin-top: 50rpx;
+}
+
+/* 内容 */
+
+@font-face {
+  font-family: "iconfont"; /* Project id 4066545 */
+  src: url('//at.alicdn.com/t/c/font_4066545_reh3n8aw85.woff2?t=1684043643321') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4066545_reh3n8aw85.woff?t=1684043643321') format('woff'),
+       url('//at.alicdn.com/t/c/font_4066545_reh3n8aw85.ttf?t=1684043643321') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-goutong:before {
+  content: "\e607";
+}
+
+.icon-xinzi:before {
+  content: "\e7ae";
+}
+
+.icon-dubanjieshu:before {
+  content: "\e675";
+}

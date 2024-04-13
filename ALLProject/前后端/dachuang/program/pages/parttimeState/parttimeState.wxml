@@ -1,0 +1,121 @@
+<view class="amount">
+
+
+</view>
+
+
+<!-- 申请导航栏，点击选择显示隐藏 -->
+<view class="buttom">
+  <view class="nav">
+    <view class="sign">
+      <view wx:for="{{tabs}}" wx:key="id" class="signIcon{{selectway == '审核中'?'Active':''}}">
+        <view>
+          <icon class="iconfont {{item.icon}}"></icon>
+        </view>
+        <view>{{item.value}}</view>
+      </view>
+
+      <!-- <view class="signIcon{{selectway == '驳回'?'Active':''}}" bindtap="mySelect" data-name="驳回">
+        <view>
+          <icon class="iconfont icon-shibai"></icon>
+        </view>
+        <view>驳回</view>
+      </view>
+
+      <view class="signIcon{{selectway == '已通过'?'Active':''}}" bindtap="mySelect" data-name="已通过">
+        <view>
+          <icon class="iconfont icon-yitongguo"></icon>
+        </view>
+        <view>已通过</view>
+      </view> -->
+
+    </view>
+  </view>
+
+
+
+  <!-- 内容
+  https://www.cnblogs.com/crazycode2/p/8274645.html
+   -->
+
+  <view wx:if="{{selectway=='审核中'}}">
+    <veiw class="item" wx:for="{{list3}}">
+      <view class="text">
+
+        <view class="itemTitle">
+          {{item.title}}
+        </view>
+        <!-- 这是一行 -->
+        <view class="text2">
+          <view class="itemTime">
+            时间：{{item.time}}
+          </view>
+          <view class="itemSite">
+            地点：{{item.site}}
+          </view>
+        </view>
+
+        <view class="itemtxt">
+          {{item.content}}
+
+        </view>
+      </view>
+    </veiw>
+  </view>
+
+  <view wx:if="{{selectway=='驳回'}}">
+    <view class="item" wx:for="{{list2}}">
+      <view class="text">
+        <view class="text1">
+          <view class="itemTitle">
+            {{item.title}}
+          </view>
+          <view class="itemtxt">
+            {{item.content}}
+          </view>
+        </view>
+
+        <view class="text2">
+          <view class="itemTime">
+            时间：{{item.time}}
+          </view>
+          <view class="itemSite">
+            地点：{{item.site}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{selectway=='已通过'}}">
+    <veiw class="item" wx:for="{{list}}">
+
+      <view class="text">
+        <view class="text1">
+          <view class="itemTitle">
+            {{item.title}}
+          </view>
+          <view class="itemtxt">
+            {{item.content}}
+          </view>
+        </view>
+
+        <view class="text2">
+          <view class="itemTime">
+            时间：{{item.time}}
+          </view>
+          <view class="itemSite">
+            地点：{{item.site}}
+          </view>
+        </view>
+      </view>
+
+    </veiw>
+  </view>
+
+
+
+
+
+
+</view>

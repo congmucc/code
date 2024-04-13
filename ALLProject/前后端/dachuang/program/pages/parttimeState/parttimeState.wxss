@@ -1,0 +1,156 @@
+
+.amount {
+  height: 50rpx;
+  background:linear-gradient(to top,#ffffff,#6eb1f5);
+  display: flex;
+  flex-direction: row;
+}
+
+/* 下划线 */
+.cut{
+  opacity: 0.2;
+  height: 2rpx;
+  margin-top: 20rpx;
+  background-color: #000000;
+}
+
+/* 背景下半部分 */
+
+.bottom{
+  width:92%;
+  height: 1100rpx;
+  margin:0 auto;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  margin-bottom: 40rpx;
+  margin-top: 10rpx;
+  box-shadow:0rpx  8rpx  8rpx 3rpx rgb(221, 220, 220);
+  border-bottom: 1rpx solid #ccc;
+}
+
+.sign{
+  display: flex;
+  text-align: center;
+  margin-bottom: 40rpx;
+  
+}
+
+.signIcon{
+  margin-top: 16rpx;
+  width: 90rpx;
+  height: 90rpx;
+  width: 33%;
+  font-size: 30rpx;
+}
+
+/* 点击列表后的变色css  https://blog.csdn.net/Acitylion/article/details/80909909 */
+.signIconActive{
+  margin-top: 16rpx;
+  width: 90rpx;
+  height: 120rpx;
+  width: 33%;
+  font-size: 30rpx;
+  background-color: #ccc;
+  border-radius: 10rpx;
+}
+
+
+
+/* 内容列表 */
+
+/* .item{
+
+} */
+
+.text{
+  display: flex;
+  height: 200rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.text1{
+  width: 60%;
+  height: 200rpx;
+}
+
+/* 内容列表标题 */
+.itemTitle{
+  font-size: 50rpx;
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 超出隐藏 */
+  text-overflow: ellipsis; /* 超出部分显示省略号 */
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}
+/* 内容列表内容 */
+.itemtxt{
+  font-size: 30rpx;
+  color: rgb(107, 105, 105);
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 超出隐藏 */
+  text-overflow: ellipsis; /* 超出部分显示省略号 */
+  margin-top: 30rpx;
+}
+
+/* 内容列表薪水 */
+.itemSalary{
+  font-size: 30rpx;
+  font-weight: 900; 
+}
+
+/* 时间地点父类 */
+.text2{
+  font-size: 35rpx;
+}
+
+/*  内容列表时间 */
+.itemTime{
+  margin-top: 30rpx;
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 超出隐藏 */
+  text-overflow: ellipsis; /* 超出部分显示省略号 */
+}
+
+/*  */
+.itemSite{
+  
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 超出隐藏 */
+  text-overflow: ellipsis; /* 超出部分显示省略号 */
+  margin-top: 60rpx;
+}
+
+/* 内容 */
+
+
+@font-face {
+  font-family: "iconfont"; /* Project id 4060864 */
+  src: url('//at.alicdn.com/t/c/font_4060864_3gy7emp4l8n.woff2?t=1684578770021') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4060864_3gy7emp4l8n.woff?t=1684578770021') format('woff'),
+       url('//at.alicdn.com/t/c/font_4060864_3gy7emp4l8n.ttf?t=1684578770021') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 32px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shibai:before {
+  font-size: 29px;
+  content: "\e66b";
+}
+
+.icon-dajihuafabushenqingliucheng:before {
+  content: "\e64a";
+}
+
+.icon-yitongguo:before {
+  content: "\ee45";
+}
+
+.icon-shenhezhong:before {
+  content: "\e673";
+}

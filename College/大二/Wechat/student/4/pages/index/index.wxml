@@ -1,0 +1,53 @@
+<text style="color:   darkorchid;">会议主题
+</text>
+<view class="zhuti">
+<image class="a"  src="/image/雷达1.jpg"></image>
+<text>围绕未来雷达的应用、的形态及新技术等方向，畅谈雷达未来发展趋势，提出雷达应用新方向。
+</text>
+</view>
+
+<text class="abc" style="color: darkorchid;">会议背景</text>
+
+<view class="back">
+<swiper indicator-dots autoplay interval="3000" duration="20" indicator-color="red">
+<swiper-item>
+<image src="/image/雷达1.jpg"></image>
+</swiper-item>
+<swiper-item>
+<image src="/image/雷达2.jpg"></image>
+</swiper-item>
+<swiper-item>
+<image src="/image/雷达3.jpg"></image>
+</swiper-item>
+</swiper>
+</view>
+
+<text class="abc" style="color: darkorchid;">分享嘉宾</text>
+
+<view class="jiabin">
+<image class="c" src="/image/雷军.jpg" ></image>
+<image class="c" src="/image/张一鸣.jpg" ></image>
+<image class="c" src="/image/杨洋.jpg" ></image>
+<image class="c" src="/image/马云.jpg" ></image>
+<image class="c" src="/image/马化腾.jpg" ></image>
+<image class="c" src="/image/背景图.jpg" ></image>
+</view>
+
+<text class="abc" style="color: darkorchid;">会议地点</text>
+
+<view>
+<picker mode="region" bindchange="regionChange">
+<view>当前选择；{{region}}</view>
+<icon>cheng</icon>
+</picker>
+<view class="spot"><map></map></view>
+
+
+
+
+
+
+
+
+
+</view>

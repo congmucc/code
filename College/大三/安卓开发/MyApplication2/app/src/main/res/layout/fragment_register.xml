@@ -1,0 +1,69 @@
+<!-- fragment_register.xml -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="用户名"/>
+
+    <EditText
+        android:id="@+id/editTextAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="账号"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="密码"/>
+
+    <!-- 示例：性别单选按钮 -->
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"/>
+    </RadioGroup>
+
+    <!-- 示例：出生年月日选择 -->
+    <Button
+        android:id="@+id/buttonPickDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择出生日期"/>
+
+    <!-- 示例：爱好复选框 -->
+    <CheckBox
+        android:id="@+id/checkBoxHobby1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="爱好1"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxHobby2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="爱好2"/>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<view class='amountBg'>
+  <view class='img'>
+    <image src="{{avatarUrl}}" style='width:80px;height:80px; border-radius: 50%;'></image>
+  </view>
+  <!-- 昵称和用户证明 -->
+  <view class='account'>
+    <view class="name">{{nickName}}</view>
+    <view class='manage_text'>其他机构</view>
+  </view>
+  <!-- 设置，从新认证什么的 -->
+  <view class='set'>
+    <icon class="iconfont icon-guanli"></icon>
+  </view>
+</view>
+
+
+<view class='contain'>
+
+  <view class='order'>
+    <view class='order_text'>
+      <text style="margin-left: 30rpx;">功能</text>
+    </view>
+    <view class="order_main">
+      <view class="order_list1">
+        <view class="desc" bindtap="goActivity">
+          <icon class="iconfont icon-shenqing"></icon>
+          <view style="margin-top: 20rpx;"><text>申请活动</text></view>
+        </view>
+      </view>
+      <view class='order_list'>
+        <view class='list_desc' bindtap="goState">
+          <view class="desc_icon">
+            <icon class="iconfont icon-qingjiashenqing"></icon>
+          </view>
+          <view class="desc_text">
+            申请状态
+          </view>
+        </view>
+        <view class='list_desc' bindtap="goActManagement">
+          <view class="desc_icon">
+            <icon class="iconfont icon-project_management"></icon>
+          </view>
+          <view class="desc_text">活动管理</view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+  <view class='item' bindtap="goActFeedback">
+    <view class='icon'>
+      <icon class="iconfont icon-fankui"></icon>
+    </view>
+    <view class='itemname'>
+      <view>活动反馈</view>
+    </view>
+  </view>
+
+  <view class='item'>
+    <view class='icon'>
+      <icon class="iconfont icon-lianxiren"></icon>
+    </view>
+    <view class='itemname'>
+      <view>联系方式</view>
+    </view>
+  </view>
+</view>

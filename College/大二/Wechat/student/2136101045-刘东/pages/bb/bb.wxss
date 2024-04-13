@@ -1,0 +1,21 @@
+.aa{
+  width: 300px;
+  height: 220px;
+  text-align: center;
+}
+
+.text{
+  color:blueviolet;
+}
+
+.back{
+  border: 3px solid rgb(14, 233, 69);
+  font-size: 15px;
+  width: 300px;
+  height: 180px;
+  margin:10px 7px;
+ background-color: ivory;
+}
+.a{
+  width: 100%;
+}

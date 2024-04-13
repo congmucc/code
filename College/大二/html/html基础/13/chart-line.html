@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/Chart.min.js"></script>
+</head>
+
+<body>
+    <canvas id="myChart" width="900" height="380"></canvas>
+
+    <script>
+        // 实例化一个chart对象
+        var ctx = document.getElementById("myChart");
+        const config = {
+            // 设置图表类型
+            type: 'line',
+            // 图标的数据集
+            data: {
+                labels: ['星期一', '星期二', '星期三', '星期四', '星期五', '星期六', '星期日'],
+                datasets: [{
+                    label: '蓝线',
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    fill: false,
+                    borderColor: 'rgb(75, 192, 192)', // 设置线的颜色
+                    tension: 0.1
+                },
+                {
+                    label: '红线',
+                    data: [75, 69, 90, 91, 66, 65, 50],
+                    fill: true,
+                    borderColor: 'pink', // 设置线的颜色
+                    tension: 0
+                },
+
+            ]
+            },
+            options: { 
+                // 整个图表的标题
+                title: {
+                    display:true,
+                    text: '一周成交量',
+                    fontColor: 'green',
+                    fontSize: '24',
+                    position: 'top',//left right bottom
+                },
+                // 图表的y轴
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            min: 0,
+                            // max: 80,
+                            suggestedMax:80,
+                            stepSize:20,
+                            //   给y轴加上汉字 
+                            callback: function (value, index, values) {
+                                return value + '件';
+                            }
+                        },
+                    }]
+                }
+            },
+        }
+        const myChart = new Chart(ctx, config);
+    </script>
+</body>
+
+</html>

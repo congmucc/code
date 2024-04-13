@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+}
+.top{
+    background-color: aqua;
+    padding-left: 10px;
+    float: left;
+}
+
+.top ul li{
+    font-size: 20px;
+    padding-right: 40px;
+    list-style-type: none;
+    padding-right: 145px;
+    float: left;
+}
+
+.middle{
+    clear: both;
+    padding-left: 10px;
+    float: left;
+}
+
+.middle ul{
+    padding-top: 20px;
+}
+
+.middle ul li{
+    padding-top: 18px;
+    width: 215px;
+    border: 1px silver solid;
+    border: 1px silver solid;
+    list-style-image: url("./image/list1.png");
+
+}
+
+.middle ul li:hover {
+    background-color: rgb(111, 173, 224);
+    list-style-image: url("./image/list2.png");
+}

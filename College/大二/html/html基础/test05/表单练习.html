@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单综合练习</title>
+    <!-- css内部样式 1、写在style标签里 -->
+    <style>
+        /* css的选择器  1、标签选择器 */
+        h1{
+            color: blueviolet;
+            font-size: 40px;
+            text-align: center;
+            font-style: italic;
+        }
+       /* css的选择器  2、id选择器  唯一不能重复*/
+        #fl1{
+            background-color: rgba(251, 196,163, 0.5);/*透明背景色*/
+            border:solid 2px rgb(35, 4, 64);
+            font-size: 25px;
+            text-align: center
+        }
+        #fl2{
+            border:dashed 2px rgb(35, 4, 64);
+            font-size: 25px;
+            text-align: left;
+        }
+        #fl3{
+            background-color: rgba(251, 196,163, 0.5);/*透明背景色*/
+            border:solid 2px rgb(35, 4, 64);
+            font-size: 25px;
+            text-align: center
+        }
+       /* css的选择器  3、类选择器  .类名 可以重复*/
+        .leg{
+            font-size: 30px;
+            color: purple;
+            letter-spacing: 2px;/*字符间距*/
+            text-align: center
+        }
+        .regform{
+            background-color: rgba(207, 165,217, 0.3);
+            width: 700px;
+            margin: 0 auto;/*实现居中*/
+            border-radius: 50px;/*边框弧度*/
+            line-height: 50px;/*行高*/
+        }
+
+    </style>
+    <!-- css外部样式  1、通过link标签链入外部css文件 -->
+   <link rel="stylesheet" href="./regist.css">
+   <!-- css外部样式  2、通过@import链入外部css文件  -->
+   <style>
+    @import url(./regist.css);
+   </style>
+</head>
+
+<body>
+     <!-- css内部样式 2、写在标签的style属性里  优先级最高 -->
+    <h1 style="color: rgb(35, 4, 64);font-size: 35px; text-align: left;" class="leg">网站注册页面</h1>
+<div class="regform">
+    <form action="https://www.baidu.com" method="get"  autocomplete="on" novalidate>
+        <fieldset id="fl1"> <!-- 定义一个标题域 -->
+            <legend class="leg">用户信息</legend><!-- 标题域的标题 -->
+            <label>用户名：<input type="text" name="un" autofocus  placeholder="输入用户名"></label><br>
+            <label>  密&nbsp;&nbsp;码：<input type="password" name="psw" required id="psw1"> <br></label>
+            确认密码：<input type="password" name="rpsw" required id="psw2"><br>
+        </fieldset>
+        <fieldset id="fl2"> <!-- 定义一个标题域 -->
+            <legend class="leg">联系人信息</legend><!-- 标题域的标题 -->
+            性别：<label>男<input type="radio" name="sex" value="m" checked></label> <!-- RADIO 是单选按钮 -->
+                 <label>女 <input type="radio" name="sex" value="f"></label><br>
+            <!-- checkbox 是多选按钮 -->
+            兴趣爱好：看书<input type="checkbox" name="hobby" value="h1"> 
+                     音乐<input type="checkbox" name="hobby" value="h2"> 
+                     舞蹈<input type="checkbox" name="hobby" value="h3" checked> 
+                     游戏<input type="checkbox" name="hobby" value="h4"> 
+                     体育<input type="checkbox" name="hobby" value="h5" checked>
+                     动漫<input type="checkbox" name="hobby" value="h6"><br>
+            年级：<select name="grade" id=""><!-- select +option 是选择框 -->
+                    <option value="g1">大一</option>
+                    <option value="g2" selected>大二</option>
+                    <option value="g3">大三</option>
+                    <option value="g4">大四</option>
+                  </select> <br>
+            专业：<input name="zhuanye" id="" list="zy">
+                    <datalist id="zy">
+                        <option>软件工程</option>
+                        <option value="计科">
+                        <option value="大数据">
+                        <option value="电子"> 
+                    </datalist>  <br>    
+            <!-- textarea 是文本输入区域 -->
+            自我介绍：<textarea name="js" cols="50" rows="20">在这里介绍以下你自己吧！</textarea> 
+            上传头像：<input type="file">     
+        </fieldset>
+        <fieldset id="fl3"> <!-- 定义一个标题域 -->
+            <legend class="leg">其他信息</legend><!-- 标题域的标题 -->
+            电子邮箱：<input type="email" name="email" id="" placeholder="***@***.com"><br>
+            个人首页：<input type="url" name="" id=""><br>
+            期望薪资：<input type="number" name="age" min="0" max="120000" step="100" value="5000"><br>
+
+            四级成绩:0<input type="range" name="cet4"  min="0" max="710" value="425"
+             id="cet_4" oninput="cetnum.value=cet_4.value">710
+            您的成绩为：<output name="cetnum" for="cet_4"></output><br>
+
+            生日：<input type="date" name="birthday" id=""><br>
+            最喜欢的颜色：<input type="color" name="color" value="#C281CA">
+        </fieldset>
+        <input type="submit" value="登录">
+        <input type="reset" value="清空">
+    </form>
+</div>
+    <script>
+    </script>
+</body>
+</html>

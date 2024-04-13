@@ -1,0 +1,144 @@
+
+page {
+  padding-top: 150rpx;
+  background-color: #eee
+}
+
+.amount {
+  height: 50rpx;
+  background:linear-gradient(to top,#ffffff,#6eb1f5);
+  margin-bottom: 10rpx;
+}
+
+
+/* 背景下半部分 */
+
+.nav {
+  background-color: #fff;
+  border-radius:  20rpx;
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 20rpx;
+  height: 140rpx;
+}
+
+.sign{
+  display: flex;
+  text-align: center;
+  margin-bottom: 20rpx;
+  justify-content: space-evenly;
+}
+
+.signIcon{
+  width: 130rpx;
+  height: 120rpx;
+  font-size: 30rpx;
+}
+
+
+/* 点击列表后的变色css  https://blog.csdn.net/Acitylion/article/details/80909909 */
+.signIconActive{
+
+  width: 130rpx;
+  height: 120rpx;
+  font-size: 30rpx;
+  background-color: #ccc;
+  border-radius: 20rpx;
+}
+
+
+
+/* 内容列表 */
+
+/* .item{
+
+} */
+
+.text{
+  background-color: #fff;
+  width: 95%;
+  box-sizing: border-box;
+  border-radius: 25rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  padding: 25rpx;
+}
+
+.text:active {
+ background-color: #ffffff13;
+}
+
+
+/* 内容列表标题 */
+.itemTitle{
+  font-size: 47rpx;
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 超出隐藏 */
+  text-overflow: ellipsis; /* 超出部分显示省略号 */
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+/* 内容列表内容 */
+.itemtxt{
+  font-size: 30rpx;
+  color: rgb(107, 105, 105);
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 超出隐藏 */
+  text-overflow: ellipsis; /* 超出部分显示省略号 */
+  margin-top: 30rpx;
+}
+/* 时间地点父类 */
+.text2{
+  font-size: 35rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*  内容列表时间 */
+.itemTime{
+  margin-top: 30rpx;
+  overflow: hidden; /* 超出隐藏 */
+  text-overflow: ellipsis; /* 超出部分显示省略号 */
+}
+
+/*  */
+.itemSite{
+  overflow: hidden; /* 超出隐藏 */
+  text-overflow: ellipsis; /* 超出部分显示省略号 */
+  margin-top: 30rpx;
+}
+
+/* 内容 */
+
+@font-face {
+  font-family: "iconfont"; /* Project id 4060864 */
+  src: url('//at.alicdn.com/t/c/font_4060864_3gy7emp4l8n.woff2?t=1684578770021') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4060864_3gy7emp4l8n.woff?t=1684578770021') format('woff'),
+       url('//at.alicdn.com/t/c/font_4060864_3gy7emp4l8n.ttf?t=1684578770021') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 32px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shibai:before {
+  font-size: 29px;
+  content: "\e66b";
+}
+
+.icon-dajihuafabushenqingliucheng:before {
+  content: "\e64a";
+}
+
+.icon-yitongguo:before {
+  content: "\ee45";
+}
+
+.icon-shenhezhong:before {
+  content: "\e673";
+}

@@ -1,0 +1,3 @@
+<image src="/image/th (4).jpg" class="aa"></image>
+
+<button type="primary" class="bb" bindtap="onTap">进入</button>

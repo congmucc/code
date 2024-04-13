@@ -1,0 +1,114 @@
+.content{
+  width: 100%;
+  height: 700px;
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+/* 下拉框view */
+.list-msg1 {
+ padding-top: 60rpx;
+ height: 80rpx;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-bottom: 40rpx;
+}
+
+/* 下拉框选项 */
+.select_box {
+ background-color: #ddd;
+ padding: 0 10rpx;
+ width: 93%;
+ position: absolute;
+ top: 130rpx;
+ z-index: 1;
+ overflow: hidden;
+ animation: myfirst 0.5s;
+}
+
+/* 下拉详细选项 */
+.select_one{
+ height: 60rpx;
+ line-height: 60rpx;
+ border-bottom: 1px solid #ccc;
+}
+
+
+/* 姓名view */
+.userName{
+ margin-top: 30rpx;
+ height: 70rpx;
+ display: flex;
+ /* justify-content: space-between; */
+ border-bottom:1px solid #aaa;
+}
+
+/* 姓名文字view */
+.userNameText {
+ margin-left: 30rpx;
+ margin-right: 20rpx;
+}
+
+/* 姓名输入框view */
+.userNameInput {
+ margin-left: 80rpx;
+ width: 400rpx;
+}
+
+
+/* 上传图片的文字 */
+.title {
+ margin-top: 20rpx;
+ margin-bottom: 20rpx;
+}
+
+/* 
+.addImageView{
+ display: flex;
+}
+
+.addImage{
+ height: 250rpx;
+ width: 250rpx;
+ margin-right: 10rpx;
+ margin-bottom: 10rpx;
+ background-color: #ddd;
+}
+
+.addImage:active {
+ height: 250rpx;
+ width: 250rpx;
+ margin-right: 10rpx;
+ margin-bottom: 10rpx;
+ background-color: #ccc;
+} */
+
+
+@font-face {
+ font-family: "iconfont"; /* Project id 4021625 */
+ src: url('//at.alicdn.com/t/c/font_4021625_y9vb5qflv4q.woff2?t=1681998213617') format('woff2'),
+      url('//at.alicdn.com/t/c/font_4021625_y9vb5qflv4q.woff?t=1681998213617') format('woff'),
+      url('//at.alicdn.com/t/c/font_4021625_y9vb5qflv4q.ttf?t=1681998213617') format('truetype');
+}
+
+.iconfont {
+ font-family: "iconfont" !important;
+ font-size: 16px;
+ font-style: normal;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shurukuang-shangchuantupian:before {
+ content: "\e605";
+ display: flex;
+ margin-top: 100rpx;
+ margin-left: 100rpx;
+ font-size: 60rpx;
+}
+
+.icon-xiasanjiao:before {
+ content: "\e63f";
+}
+

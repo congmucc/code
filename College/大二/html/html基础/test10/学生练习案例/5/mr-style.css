@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#wrap {
+	width: 800px;
+	height: 400px;
+	margin: 0 auto;
+	margin-left:20px;
+}
+#top {			/*商品信息文字部分的样式*/
+    width: 329px;
+    height: 220px;
+    border-bottom: 1px solid #bbb;	/*边框底部样式*/
+    font-family: 'Microsoft yahei'; /*字体风格*/
+    margin-left: 374px;	
+    margin-top: -340px;
+}
+#top p {
+	margin-bottom: 15px;
+}
+#top p font {
+	font-size: 14px;
+	color: #000;
+	margin-right: 15px;
+}
+#top p span {
+	font-size: 14px;
+	color: #666;
+	border: 1px solid #999;
+	display: inline-block;
+	padding: 8px;
+	cursor: pointer;
+}
+#top p span.on {
+	border: 2px solid #f60;
+	padding: 7px;
+}
+#bottom {
+    width: 329px;
+    height: 159px;
+    padding-top: 20px;	/*内边距*/
+	margin-left: 373px;  /*外边距*/
+    font-family: "Microsoft yahei";
+}
+#bottom p font {
+	color: #f60;
+	font-size: 20px;
+	margin-right: 20px;
+}
+#bottom p a {
+	font-size: 14px;
+	color: blue;
+}
+#bottom p a i {
+	margin: 0 5px;
+	color: #90c;
+}
+#bottom button {/*购买按钮*/
+	width: 330px;
+	height: 50px;
+	font-family: 'Microsoft yahei';
+	margin-top: 20px;
+	font-size: 20px;
+	background: #f60;
+	color: #fff; /*购买按钮的字体颜色*/
+	border: none;
+}
+#bottom button:hover{
+	background: rgb(160, 66, 3);
+	color: black; /*购买按钮的字体颜色*/
+	border: 1px solid black;
+}
+div img{
+	width:350px;	
+	height:350px;
+	margin-right: 1000px;
+	margin-top:20px;
+}
+.mr-box {
+    width: 770px;
+    height: 390px;
+    border: 2px solid red;
+	margin:0 auto;
+}

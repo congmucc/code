@@ -1,0 +1,56 @@
+<view>
+  提示:点击选择活动，进行修改
+</view>
+
+  <!-- 这三个进行在一行中 -->
+  <!-- 可以设定一个变量，然后活动选择后把变量赋值活动数组，然后直接选择修改就行了，可以通过js控制点击后的颜色，便于识别 -->
+<!-- 补充申请的话直接让用户直接选择活动，然后将信息跳转到申请界面，用{{}}，直接在输入框上让他修改就行 -->
+<!-- 沟通交流再说，先把界面做出来 -->
+<!-- 活动状态是做一个进度的列表，可以上拉刷新 -->
+<view class="buttom">
+  <view class="sign">
+    <view class="signIcon" bindtap="goActivity">
+      <view><icon class="iconfont icon-goutong"></icon></view>
+      <view>薪资结算</view>
+    </view>
+
+    <view class="signIcon" bindtap="goCommunication">
+      <view><icon class="iconfont icon-xinzi"></icon></view>
+      <view>沟通交流</view>
+    </view>
+    
+    <view class="signIcon" bindtap="goState">
+      <view><icon class="iconfont icon-dubanjieshu"></icon></view>
+      <view>兼职结束</view>
+    </view>
+  </view>
+
+  <!-- 下划线 -->
+  <view class="cut"></view>
+
+  <!-- 申请活动列表 -->
+  <veiw class="item">
+    <navigator>
+      <view class="text">
+        <view class="text1">
+          <view class="itemTitle">
+          <!-- {{}} -->
+          学校开展大学生职业竞赛活动
+          </view>
+          <view class="itemtxt">
+            关于2023年大学生职业竞赛由公司正式开始
+          </view>
+        </view>
+        
+        <view class="text2">
+          <view class="itemSalary">
+            薪资：23{{}}/时
+          </view>
+          <view class="itemSite">
+            参与人数：79{{}}
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </veiw>
+</view>

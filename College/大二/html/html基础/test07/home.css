@@ -1,0 +1,238 @@
+*{
+    /* 一开始网站会有8像素的宽度，要想顶头就铺满，需要删除像素 */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("https://tse3-mm.cn.bing.net/th/id/OIP-C.4f01xYBNCGvRFs8a-n6WBQHaEK?w=332&h=186&c=7&r=0&o=5&dpr=1.9&pid=1.7");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+/*  渐变
+    background: linear-gradient(to right, red, blue); */
+}
+.cout{
+    width: 1140px;
+    margin: 20px auto;
+}
+
+.color{
+    color: rgb(135, 86, 240);
+    height: 45px;
+}
+
+.big{
+   font-size: 20px;
+   font-weight: bolder;
+}
+
+a{
+    color: #f00c0c;
+    text-emphasis: none;
+    list-style: 40px;
+    float: right;
+}
+
+a:hover{
+    color: #0c95f0;
+}
+
+.more{
+    background-color: cadetblue;
+    font-size: 25px;
+    text-align: right;
+    height:  40px;
+}
+
+
+.list{
+    width: 215px;
+    border: 1px silver solid;
+    margin-top: 40px;
+    margin-left: 11px;
+    text-align: center;
+    float: left;
+}
+
+.list img{
+    width: 100%;
+    height: 203px;
+    margin-top: 10px;
+}
+
+.list img:hover{
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+.list p{
+    color: #f00c0c;
+   padding: 0 10px;
+   height: 40px;
+}
+
+.price{
+    float: left;
+}
+
+.e_book{
+    float: right;
+    background-color: red;
+    color: #fff;
+    padding: 4px 4px;
+    /* 指针上去变小手 */
+    cursor: pointer;
+}
+.e_book:hover{
+    background-color: #2e0cf0;
+}
+
+
+.top{
+    position: absolute;
+    /* 层叠效果配合absolute */
+    z-index: 999;
+ 
+    background-color: aqua;
+    /* padding-left: 10px; */
+    float: left;
+    
+}
+
+.top>ul{
+    width: 1140px;
+    height: 50px;
+    background-color: black;
+}
+.top>ul>li{
+    width: 200px;
+    font-size: 20px;
+    color: aliceblue;
+    margin-left: 20px;
+    list-style-type: none;
+    /* text-align  是水平居中   
+       line-height 和 height 相等的时候垂直居中
+    */
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+}
+
+.top>ul>li:hover ul{
+    display: block;
+}
+
+.top>ul>li>ul>li:hover{
+    background-color: rgb(78, 190, 255);
+}
+
+.top>ul>li>ul{
+    width: 210px;
+    border: 1px rgb(202, 14, 14) solid;
+    border: 1px silver solid;
+    list-style-type: none;
+    display: none;
+    background-color: blue;
+}
+
+.top>ul>li>ul>li{
+    width: 210px;
+    border: 1px rgb(202, 14, 14) solid;
+
+}
+
+
+.middle{
+    clear: both;
+    margin-top: 30px;
+    padding-left: 10px;
+    float: left;
+}
+
+.middle ul{
+    margin-top: 21px;
+    height: 203px;
+}
+
+.middle ul li{
+    padding-top: 18px;
+    height: 28px;
+    width: 215px;
+    border: 1px silver solid;
+    border: 1px silver solid;
+    list-style-image: url("./image/list1.png");
+
+}
+
+.middle ul li:hover {
+    background-color: rgb(111, 173, 224);
+    list-style-image: url("./image/list2.png");
+}
+
+
+.social_icons{
+    position: fixed;
+    top: 300px;
+    right: 0px;
+    width: 50px;
+    /* 弹性布局，行内元素竖排列 */
+    display: flex;
+    flex-direction: column;
+}
+
+.social_icons i{
+    font-size: 40px;
+}
+
+.social_icons i:hover{
+    color: blueviolet;
+}
+
+.media{
+    clear: both;
+    width: 700px;
+    height: 700px;
+    margin: 60px auto;
+    position: relative;
+}
+
+.m1{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    color: rgb(241, 12, 12);
+}
+
+.media>video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.banner{
+    width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    margin:60px auto 10px;
+}
+
+#imglist{
+    list-style: none;
+    width: 3000px;
+    height:500px;
+    display: flex;
+    animation: bannermove 5s linear infinite;
+}
+
+@keyframes bannermove {
+    0%{margin-left: 0;}
+    50%{margin-left: -1000px;}
+    100%{margin-left: -2000px;}
+}
+
+#imglist img{
+    width: 1000px;
+    height: 500px;
+}

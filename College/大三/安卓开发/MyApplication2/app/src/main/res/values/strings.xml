@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">project</string>
+    <string name="app_button_confirm">确定</string>
+    <string name="app_button_cancel">取消</string>
+    <string name="app_person_title">请填写个人信息</string>
+    <string name="e2_button_gotoe2">点击进入实验二</string>
+    <string name="e2_text">这是实验二跳转界面</string>
+    <string name="e3_button_gotoe3">点击进入实验三</string>
+    <string name="e4_button_gotoe4">点击进入实验四</string>
+    <string name="e3_name">请输入姓名</string>
+    <string name="e3_sex">请输入性别</string>
+    <string name="e3_age">请输入年龄</string>
+    <string name="e3_studentid">请输入学号</string>
+</resources>

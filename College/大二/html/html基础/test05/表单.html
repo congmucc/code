@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+    <!-- css外部样式 1、通过link标签进行链入外部css文件 -->
+    <!-- 第一个rel不能改，只能是这个，第二个就是导入路径 -->
+    <!-- <link rel="stylesheet" href="/test05/style.css"> -->
+ 
+    <!-- css外部样式 2、通过@import链入外部css文件 -->
+    <style>
+        @import url(./style.css);
+
+        /* 选择器，两个选择 */
+
+        /* 1、通过id来修改style */
+        #fl1{
+            text-align: center;
+            background-image: url("https://tse1-mm.cn.bing.net/th/id/OIP-C.9xuSoRNv1sUdWwVkZqLULgHaEo?pid=ImgDet&rs=1");
+            background-size: cover;
+            font-size: 30px;
+            border: solid 2px rgb(red, green, blue);
+        }
+        
+        /* 2、通过类来修改style */
+        .fl2{
+            background-image: url("https://tse3-mm.cn.bing.net/th/id/OIP-C.3Qbtdr7D5uWkSqr8FEyxcAHaGI?pid=ImgDet&rs=1");
+            font-size: 20px;
+            color: red;
+        }
+        /* 修改输入框为图示 */
+        input[type=submit],[type=reset]{
+            width: 45%;
+            border: none;
+            background-color: chartreuse;
+            height: 30px;
+            color: #fff;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        /* hover 是鼠标悬浮的， focus是选中后 */
+        input[type=submit]:hover{
+            background-color: rgb(68, 0, 255);
+            color: black;
+        }
+        input[type=reset]:hover{
+            background-color: azure;
+            color: black;
+        }
+        input:focus{
+            background-color: aliceblue;
+            border:none;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="demo.php" method="get" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <fieldset id="fl1">
+            <legend align="center">登陆页面</legend>
+            账号：<input type="text" value="请输入账号"><br/>
+            密码：<input type="password"><br/>
+            确认密码：<input type="password"><br/>
+            <input type="button" value="获取验证码"> <br/>
+        </fieldset>
+        <fieldset class="fl2">
+            <legend align="center" >信息选择</legend>
+            性别：<label>男<input type="radio" name="sex" value="male"></label>
+            <label for="female">女</label>
+                 <input type="radio" name="sex" id="female" value="female"><br/>
+            爱好：看书<input type="checkbox" name="hobby" value="h1">
+                 音乐<input type="checkbox" name="hobby" value="h2">
+                 舞蹈<input type="checkbox" name="hobby" value="h3">
+                 游戏<input type="checkbox" name="hobby" value="h4"><br/>
+        </fieldset>
+        <fieldset>
+            <legend align="center">附加一</legend>
+            年级：<select>
+                <option>大一</option>
+                <option>大二</option>
+                <option>大三</option>
+                <option>大四</option>
+            </select>
+            <input list="grade" name="grades">
+            <datalist id="grade">
+                <option value="大一">
+                <option value="大二">
+                <option value="大三">
+                <option value="大四">
+            </datalist><br/>
+        </fieldset>
+        <fieldset>
+            <legend align="center" >附加二</legend>
+            
+            电子邮箱：<input type="email" name="email" id="" placeholder="***@qq.com"><br/>
+            个人邮箱：<input type="url" name="" id=""><br/>
+            四级分数：0<input type="range" id="a" value="50">100
+                      +<input type="number" id="b" value="350">
+                      =<output name="x" for="a b"></output><br/>
+            喜欢的颜色<input type="color" name="color" value="#00ff00"><br/>
+
+        </fieldset>
+        
+        <fieldset>
+            <legend align="center" >反馈</legend>
+            反馈：<textarea rows="3" cols="50" wrap="virtual"></textarea>
+        </fieldset>
+        <input type="submit" value="登录">
+        <input type="reset" value="清空">
+    </form>
+    <img src="https://tpc.googlesyndication.com/daca_images/simgad/5539309740627789932" border="0" width="970" alt="" class="img_ad">
+</body>
+</html>

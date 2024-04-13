@@ -1,0 +1,10 @@
+<view class="aa">
+  <view></view>
+<text class="bb">请使用计算器</text>
+<input placeholder="请输入第一个数字" class="cc" placeholder-style="color: black" bindinput="numberFirst"></input>
+<text class="text" style="font-size: 30px;">+</text>
+<input placeholder="请输入第二个数字" class="cc" placeholder-style="color: black" bindinput="numberSecond"></input>
+<button class="dd" type="primary"  bindtap="qiuhe">计算</button>
+<text>结果为：{{sum}}</text>
+
+</view>

@@ -1,0 +1,7 @@
+<view class="aa">
+<input bindinput="zz" placeholder="请输入要添加的数组元素" bindinput="zz"></input>
+
+<button class="bb" bindtap="add" type="primary">增加</button>
+<button class="cc" bindtap="del" type="warn">删除</button>
+<text>数组：{{array}}</text>
+</view>

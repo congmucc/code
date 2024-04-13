@@ -1,0 +1,18 @@
+<view class="aa">
+  <text class="text">都可以滑动哦</text>
+<scroll-view class="back" scroll-left="true" scroll-y="true" refresher-enabled="true" scroll-top="True" refresher-threshold="13">
+
+<image src="/image/th (3).jpg"></image>
+<image src="/image/R-C (3).jpg"></image>
+
+</scroll-view>
+
+</view>
+<view>
+<video id="dance" src="http://712-7.vod.tv.itc.cn/sohu/v1/TmwCoAIOfh1HeGdiRKANPVb3ye9ChVAvoMxUh6cOhOXUyYbSoO2VqVw.mp4?k=F7xSWp&p=jWlvzSoCoLomomX3qEOGOp3gX5IBNMvVqTfAvm1BqVPcyM0GvmfCZM4IEOdOmCGhWqFzSp&r=TmI20LscWOo3NMAcN6w1DOyAoFblqYeNyePVeVstot9depfIvGQck7ioWjYhRkIWhoCNLfcWB6OwmXAyBj&q=OpCAhW7IWJodRD64vmfCyY2tfhX4WOXtfFXOfYeS0F2OfBe4WYy4fOoURDv4fJoUZDJ&nid=712" class="a" danmu-list="{{danmulist}}"></video>
+<input placeholder="请输入弹幕" bindinput="getdanmu"></input>
+<button type="primary" bindtap="send">发送</button>
+
+
+
+</view>

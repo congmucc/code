@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./09.css">
+
+    <script>
+        //  document是浏览器对象，输出字符串到页面
+        document.write("<h2>我是内部使用的Javascript！</h2>");
+    </script>
+
+    <!-- 引用外部js文件 -->
+    <script src="./09.js"></script>
+</head>
+
+<body>
+
+
+    <!-- 这时候函数实参需要用单引号'' 形参要用双引号 -->
+    <input id = 'one' value = '100'>
+    <button onclick="Welcome('欢迎大家')">点击欢迎</button>
+    <button onclick = "sumNumber(100)">点击求和</button>
+    <!-- <p>Hello</p>
+    <p>World</p>
+    <p>Hello</p>
+    <p>World</p>
+    <ul id="ulNode">
+        <li>音乐</li>
+        <li>足球</li>
+        <li>篮球</li>
+    </ul> -->
+
+    <h1 id="h" >登陆界面</h1> 
+    
+    <form action="#" id="form1">
+        账号：<input type="text" id="user" value=""><br/>
+        密码：<input type="password" id="userPassword" value=""><br/>
+        <input type="submit" value="登陆" onclick = "userF()"><br/>
+    </form>
+    
+    <img src="https://tse3-mm.cn.bing.net/th/id/OIP-C.s6rqFs-e5I6O65GZjdn6AwHaFC?w=228&h=180&c=7&r=0&o=5&pid=1.7" height="300" id="image1">
+    <input type="button" value="改变图片" id="imgbtn">
+     <script>
+        // //innerHTML需要到html中的内部script中进行使用, 也就是这里
+        
+        // //通过标签获取元素
+        // var pElement = document.getElementsByTagName('p');
+        // console.log(pElement);
+        // for (var i = 0; i < 4; i ++) 
+        //     pElement[i].style.color = "red";
+
+
+        // //通过选择器直接获取元素  加个all是选取所有元素，返回一个列表
+        // var ulElement = document.querySelector("#ulNode li:nth-child(2)");
+        // ulElement.innerHTML = "跳舞";
+
+        var imgbtns = document.getElementById("imgbtn");
+        imgbtns.onclick = function change(){
+            var imgs = document.getElementById("image1");
+            imgs.src = "https://tse4-mm.cn.bing.net/th/id/OIP-C.Pl6XohM2U_HyfWIK4xLJXwHaGf?w=194&h=180&c=7&r=0&o=5&dpr=1.9&pid=1.7";
+        }
+
+    </script> 
+</body>
+
+</html>

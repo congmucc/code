@@ -1,0 +1,49 @@
+
+.zhuti{
+  border: 3px solid rgb(14, 233, 69);
+  font-size: 15px;
+  width: 300px;
+  height: 120px;
+  margin:10px 7px;
+ background-color: ivory;
+}
+.a{
+  width: 40px;
+  height: 40px;
+  margin: 10px 15px;
+}
+.b{
+  width: 40px;
+  height: 40px;
+  margin: 10px 15px;
+}
+
+.back{
+  border: 3px solid rgb(14, 233, 69);
+  font-size: 15px;
+  width: 300px;
+  height: 150px;
+  margin:10px 7px;
+ background-color: ivory;
+}
+.jiabin{
+  border: 3px solid rgb(14, 233, 69);
+  font-size: 15px;
+  width: 300px;
+  height: 200px;
+  margin:10px 7px;
+ background-color: rgb(10, 173, 91);
+}
+.c{
+  width: 90px;
+  height: 90px;
+  margin: 5px 5px;
+}
+.spot{
+  border: 3px solid rgb(14, 233, 69);
+  font-size: 15px;
+  width: 300px;
+  height: 150px;
+  margin:10px 7px;
+ background-color: rgb(10, 173, 91);
+}

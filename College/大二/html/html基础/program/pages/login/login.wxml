@@ -1,0 +1,59 @@
+<!--pages/login/login.wxml-->
+<view class="userInput">
+  <view class="userInputC">
+    
+    <!-- 登录区域 -->
+    <view class="logo">登录</view>
+    
+    <!-- 登录框 -->
+    <view class="userLogin">
+      <icno class="iconfont icon-denglu"></icno>
+      <input type="text" auto-focus placeholder="请输入手机号/登录名"/>
+    </view>
+    
+    <!-- 密码框 -->
+    <view class="userPassword">
+      <icno class="iconfont icon-mima"></icno>
+      <input class="thePassword" password="{{passwordTest}}" auto-focus placeholder="请输入登录密码"/>
+      <!-- 显示密码框 -->
+      <icno class="iconfont icon-yanjing_xianshi_o" bindtap="changePasswordMode"></icno>
+    </view>
+    
+    <!-- 立即注册和忘记密码区 -->
+    <!-- <view class="userAdd" >
+      <view class="userRegister" bindtap="jumpRegister">
+        <text>立即注册</text>
+      </view>
+      <view class="userForget" bindtap="jumpForget">
+        <text>忘记密码</text>
+      </view>
+    </view> -->
+    
+    <!-- 登录按钮 -->
+    <view class="submitT">
+      <button  type="submit" type="primary" bindtap="jumpCertification">登录</button>
+    </view>
+    
+    <!-- 同意小程序的《使用协议》 -->
+    <view class="xieyi">
+      <checkbox class="isXY"></checkbox>
+      <view class="text-xy" >同意小程序的<text bindtap="jumpUserXY" class="xieyiText">《使用协议》</text></view>
+    </view>
+
+  </view>
+  
+
+  <!-- 提示框  使用以下方式登录 -->
+  <view class="v3">
+    <view class="line"></view>
+    <view class="lText">您还可以使用以下方式登录</view>
+    <view class="line"></view>
+  </view>
+  
+  <!-- 微信登录图标 -->
+  <icno class="iconfont icon-denglu-weixindenglu"></icno>
+
+</view>
+
+
+

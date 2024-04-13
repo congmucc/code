@@ -1,0 +1,61 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="content">
+     
+     <view class="top">
+      活动申请
+    </view>
+    
+
+    <view>
+      <view class="userName">
+        <text class="userNameText">活动名称</text>
+        <input type="text" name="orderActName" class="userNameInput" placeholder="请输入活动名称"/>
+      </view>
+      
+      <view class="userName">
+        <text class="userNameText">活动时间</text>
+        <input type="text" class="userNameInput" name="userActTime" placeholder="请输入活动时间"/>
+      </view>
+
+
+      <view class="userName">
+        <text class="userNameText">活动地点</text>
+        <input type="text" class="userNameInput" name="orderActPlace"  placeholder="请输入活动地点"/>
+      </view>
+
+      <view class="userName">
+        <text class="userNameText">活动内容</text>
+        <input type="text" class="userNameInput" name="orderActContent" placeholder="请输入活动内容"/>
+      </view>
+
+      <view class="userName">
+        <text class="userNameText">参与人数</text>
+        <input type="text" class="userNameInput" name="orderActNumber" placeholder="请输入参与人数"/>
+      </view>
+      
+      <view class="userName">
+        <text class="userNameText">活动场地</text>
+        <input type="text" class="userNameInput" name="orderActVenue" placeholder="请输入活动场地"/>
+      </view>
+
+      <view class="userName">
+        <text class="userNameText">活动物资</text>
+        <input type="text" name="orderActMaterial" class="userNameInput" placeholder="请输入活动物资"/>
+      </view>
+
+      <view class="userName">
+        <text class="userNameText">人员需求</text>
+        <input type="text" name="orderActPersonNeed" class="userNameInput" placeholder="请输入人员需求"/>
+      </view>
+
+
+    </view>
+
+
+    <view class='pagefoot'>
+      <button class='btnblock' form-type="submit">提交</button>
+    </view>
+
+
+  </view>
+ </form>

@@ -1,0 +1,37 @@
+<!--pages/login/login.wxml-->
+<view class="topbar"></view>
+<view class="content">
+  <view class="header">
+    <view class="headerText">
+      <view class="headerText1">
+        <text style="word-spacing: 70rpx auto;">欢迎!</text>
+      </view>
+      <view class="headerText2">
+        <text>让我们开始吧!</text>
+      </view>
+    </view>
+    <view>
+      <image class="headerLogo" src="https://tse1-mm.cn.bing.net/th/id/OIP-C.4rZ4ZPxFnT6vMCad7bnPugHaHa?w=193&h=193&c=7&r=0&o=5&dpr=1.5&pid=1.7" mode="widthFix" />
+    </view>
+  </view>
+
+  <view class="backd"></view>
+
+
+  <view class="backgd">
+    <view class="login" bindtap="login">
+      <icon class="iconfont icon-weixin"></icon>
+      <text class="backgdText">微信授权登录</text>
+    </view>
+    <view class="protocol">
+      <!-- <checkbox class="protocolBox"></checkbox> -->
+      <view class="protocolText">
+        <text>登录代表您已同意</text>
+        <text class="protocolTextC" bindtap="gotoUserXY">《助业宝》</text>
+        <text>协议</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- <view class="footer"></view> -->
+</view>

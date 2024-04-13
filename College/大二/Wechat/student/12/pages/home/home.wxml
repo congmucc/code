@@ -1,0 +1,21 @@
+<swiper autoplay indicator-dots="true">
+<swiper-item  	>
+<image src="/image/th8.jpg" class="aa"></image>
+</swiper-item>
+
+<swiper-item>
+<image src="/image/R-C (3).jpg"></image>
+</swiper-item>
+</swiper>
+<view>
+    <input type="text" placeholder="请输入" class="bb" style="width: 631rpx; height: 43rpx; display: block; box-sizing: border-box"></input><icon class="ss" type="search" style="width: 54rpx; height: 43rpx; display: inline-block; box-sizing: border-box"></icon>
+</view>
+
+<view class="cc">
+<image class="dd" src="/image/R-C (1).jpg"></image>
+<image class="dd" src="/image/th (1).jpg"></image>
+<image class="dd" src="/image/th (7).jpg"></image>
+<text class="ee">aa</text>
+<text class="ee">bb</text>
+<text class="ff">cc</text>
+</view>

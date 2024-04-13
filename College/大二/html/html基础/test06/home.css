@@ -1,0 +1,86 @@
+*{
+    /* 一开始网站会有8像素的宽度，要想顶头就铺满，需要删除像素 */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("https://tse3-mm.cn.bing.net/th/id/OIP-C.4f01xYBNCGvRFs8a-n6WBQHaEK?w=332&h=186&c=7&r=0&o=5&dpr=1.9&pid=1.7");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cout{
+    width: 1140px;
+    margin: 20px auto;
+}
+
+.color{
+    color: rgb(135, 86, 240);
+    height: 45px;
+}
+
+.big{
+   font-size: 20px;
+   font-weight: bolder;
+}
+
+a{
+    color: #f00c0c;
+    text-emphasis: none;
+    list-style: 40px;
+    float: right;
+}
+
+a:hover{
+    color: #0c95f0;
+}
+
+.more{
+    background-color: cadetblue;
+    font-size: 25px;
+    text-align: right;
+    height:  40px;
+}
+
+
+.list{
+    width: 215px;
+    border: 1px silver solid;
+    margin-top: 20px;
+    margin-left: 11px;
+    text-align: center;
+    float: left;
+}
+
+.list img{
+    width: 100%;
+    height: 203px;
+    margin-top: 10px;
+}
+
+.list img:hover{
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+.list p{
+    color: #f00c0c;
+   padding: 0 10px;
+   height: 40px;
+}
+
+.price{
+    float: left;
+}
+
+.e_book{
+    float: right;
+    background-color: red;
+    color: #fff;
+    padding: 4px 4px;
+    /* 指针上去变小手 */
+    cursor: pointer;
+}
+.e_book:hover{
+    background-color: #2e0cf0;
+}

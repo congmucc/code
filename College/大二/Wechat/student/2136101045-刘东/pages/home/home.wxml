@@ -1,0 +1,27 @@
+<swiper autoplay indicator-dots="true">
+<swiper-item  	>
+<image src="/image/th8.jpg" class="aa"></image>
+</swiper-item>
+
+<swiper-item>
+<image src="/image/R-C (3).jpg"></image>
+</swiper-item>
+
+<swiper-item>
+<image src="/image/th (3).jpg"></image>
+</swiper-item>
+
+</swiper>
+<view class="cc">
+  <input type="text" placeholder="请输入搜索的图片" class="bb"></input>
+  <icon type="search" class="gg"></icon>
+</view>
+
+<view>
+<image class="dd" src="/image/R-C (1).jpg"></image>
+<image class="dd" src="/image/th (1).jpg"></image>
+<image class="dd" src="/image/th (7).jpg"></image>
+<text class="ee">僵尸</text>
+<text class="hh">动漫美女</text>
+<text class="ff">萌系动漫</text>
+</view>

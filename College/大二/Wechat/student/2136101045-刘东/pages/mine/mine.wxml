@@ -1,0 +1,35 @@
+
+<view class="aa">
+<checkbox>bilibili</checkbox>
+<checkbox>pixiv</checkbox>
+<checkbox>Omofun</checkbox>
+
+<checkbox id="12">
+<label for="12">agefan</label>
+</checkbox>
+</view>
+<view>
+
+<input placeholder="请输入账号"></input>
+<input placeholder="请输入密码"></input>
+<form>
+<navigator url="/pages/home/home">
+<button size="mini" type="primary" style="position: relative; left: 204rpx; top: 17rpx; width: 312rpx; height: 75rpx; display: inline-block; box-sizing: border-box" >提交</button>
+<button size="mini" type="default" style="position: relative; left: -108rpx; top: 148rpx; width: 312rpx; height: 75rpx; display: inline-block; box-sizing: border-box">重置</button>
+</navigator>
+
+</form>
+
+</view>
+
+
+<view class="bb">
+<picker mode="region" bindchange="regionChange">
+
+<icon>cheng</icon>
+</picker>
+<view>
+<map></map>
+</view>
+
+</view>

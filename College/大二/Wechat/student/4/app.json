@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "image",
+    "pages/indexs/indexs",
+    "pages/logs/logs"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff55ff",
+    "navigationBarTitleText": "邀请函",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

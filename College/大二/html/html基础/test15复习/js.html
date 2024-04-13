@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: pink;
+            background-image: url("https://tse1-mm.cn.bing.net/th/id/OET.625a2360156145f3a3d504c50bdd749e?w=272&h=272&c=7&rs=1&o=5&pid=1.9");
+            background-repeat:no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h2>背景的设置</h2>
+    <input type="button" onclick="jump()" value="显示">
+
+    <input type="submit" id="sub">
+
+    <input type="button" class="sub2" value="丁真">
+    <script>
+        function jump(){
+            alert("xiaong");
+        }
+
+        // 通过id获取元素
+        // var sub=document.getElementById('sub');
+        // 记得别忘加#   id
+        var sub=document.querySelector('#sub');
+        sub.onclick=function(){
+            alert("一眼丁真");
+        }
+
+        //innerHTML需要到html中的内部script中进行使用
+        // 　　li[0].innerHTML;// 查看获取元素的内容
+
+
+        // 通过标签获取元素
+        // var sub2=document.getElementsByTagName('input');
+
+
+        // //通过选择器直接获取元素  加个all是选取所有元素，返回一个列表
+        // 通过类名获取元素 别忘了加.
+        // var sub2=document.querySelector('.sub2');
+
+        var sub2=document.getElementsByClassName("sub2");//返回一个数组，通过下标访问文本
+        sub2[0].onclick=function(){
+            alert("一眼丁真2");
+        }
+
+        // //只有id 和querySelector这两个是获取单个元素，其他的获取多个元素
+
+    </script>
+</body>
+</html>
