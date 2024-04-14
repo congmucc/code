@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhuyebao.mapper.StudentMapper">
+    <select id="findAll" resultType="com.zhuyebao.obj.Student">
+        select * from student where username = #{username}
+    </select>
+
+<!--    通过学号删除-->
+    <delete id="deleteById">
+        delete from student where username = #{id}
+    </delete>
+<!--    findByState-->
+    <select id="findByState" resultType="integer">
+        select stu_id from student where stu_id =#{stuId}
+    </select>
+</mapper>
